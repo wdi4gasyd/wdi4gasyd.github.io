@@ -1,23 +1,10 @@
-var app = app || {};
+var yearBook = yearBook || {};
 
-app.Student = Backbone.Model.extend({
-  
+yearBook.Student = Backbone.Model.extend({
+  idAttribute: 'slug',
   defaults: {
-    name: 'Tom',
-    photoURL: 'tba',
-    aboutMe: 'your bio',
-    portfolioImage1: 'tba',
-    portfolioImage2: 'tba',
-    portfolioImage3: 'tba',
-    portfolioURL1: 'tba',
-    portfolioURL2: 'tba',
-    portfolioURL3: 'tba',
-    portfolioBlurb1: 'tba',
-    portfolioBlurb2: 'tba',
-    portfolioBlurb3: 'tba',
-    github: 'https://github.com/thomasdane',
-    twitter: 'https://twitter.com/tomjdane',
-    linkedin: '',
-    email: ''
+    name: 'FirstName',
+    slug: 'new-student',
+    aboutMe: 'New student content'
   }
 });

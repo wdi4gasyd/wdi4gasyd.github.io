@@ -1,12 +1,10 @@
-var app = app || {};
+var yearBook = yearBook || {};
 
-var OurClass = Backbone.Collection.extend({
-  model: app.Student
-});
 
-app.Students = new OurClass([
-  new Student({
+yearBook.yearBookStudents = new yearBook.Students([
+  new yearBook.Student({
     name: 'Tom',
+    slug: 'tom-dane',
     photoURL: 'tba',
     aboutMe: 'your bio',
     portfolioImage1: 'tba',
@@ -23,8 +21,9 @@ app.Students = new OurClass([
     linkedin: '',
     email: ''
   }),
-  new Student({
+  new yearBook.Student({
     name: 'Nix',
+    slug: 'nix-siow',
     photoURL: 'tba',
     aboutMe: 'your bio',
     portfolioImage1: 'tba',
@@ -41,8 +40,9 @@ app.Students = new OurClass([
     linkedin: '',
     email: ''
   }),
-  new Student({
+  new yearBook.Student({
     name: 'Kriss',
+    slug: 'kriss-heimanis',
     photoURL: 'tba',
     aboutMe: 'your bio',
     portfolioImage1: 'tba',
@@ -59,8 +59,9 @@ app.Students = new OurClass([
     linkedin: '',
     email: ''
   }),
-  new Student({
+  new yearBook.Student({
     name: 'Olly',
+    slug: 'olly-name',
     photoURL: 'tba',
     aboutMe: 'your bio',
     portfolioImage1: 'tba',
@@ -77,8 +78,9 @@ app.Students = new OurClass([
     linkedin: '',
     email: ''
   }),
-  new Student({
+  new yearBook.Student({
     name: 'Charlie',
+    slug: 'charlie-name',
     photoURL: 'tba',
     aboutMe: 'your bio',
     portfolioImage1: 'tba',
@@ -95,8 +97,9 @@ app.Students = new OurClass([
     linkedin: '',
     email: ''
   }),
-  new Student({
+  new yearBook.Student({
     name: 'Anne',
+    slug: 'anne-name',
     photoURL: 'tba',
     aboutMe: 'your bio',
     portfolioImage1: 'tba',
@@ -113,8 +116,9 @@ app.Students = new OurClass([
     linkedin: '',
     email: ''
   }),
-  new Student({
+  new yearBook.Student({
     name: 'Erik',
+    slug: 'erik-name',
     photoURL: 'tba',
     aboutMe: 'your bio',
     portfolioImage1: 'tba',
@@ -131,8 +135,9 @@ app.Students = new OurClass([
     linkedin: '',
     email: ''
   }),
-  new Student({
+  new yearBook.Student({
     name: 'Mark',
+    slug: 'mark-name',
     photoURL: 'tba',
     aboutMe: 'your bio',
     portfolioImage1: 'tba',
@@ -149,8 +154,9 @@ app.Students = new OurClass([
     linkedin: '',
     email: ''
   }),
-  new Student({
+  new yearBook.Student({
     name: 'Simon',
+    slug: 'simon-name',
     photoURL: 'tba',
     aboutMe: 'your bio',
     portfolioImage1: 'tba',
@@ -167,4 +173,15 @@ app.Students = new OurClass([
     linkedin: '',
     email: ''
   })
+
+
+  // new yearBook.Student({id:1, title:'Tom', slug: 'tom-dane', content:'Tom content'}),
+
 ]);
+
+
+
+yearBook.router = new yearBook.AppRouter ();
+$(document).ready(function(){
+  Backbone.history.start();
+});
