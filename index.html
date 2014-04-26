@@ -12,20 +12,33 @@
     
     <header id="header">
       <h1>WDI4 Yearbook</h1>
-      <input id="new-todo" placeholder="What needs to be done?" autofocus>
+    
+      <div id="students-container">
+        <ul id="students-list">
+          <li><a href="">Nix Siow</a></li>
+          <li><a href="">Anne Homann</a></li>
+          <li><a href="">Tom Dane</a></li>
+          <li><a href="">Olly Dutton</a></li>
+          <li><a href="">Erik Froese</a></li>
+          <li><a href="">Charlie Gerard</a></li>
+          <li><a href="">Mark Pereira</a></li>
+          <li><a href="">Simon Taylor</a></li>
+          <li><a href="">Kriss Heimanis</a></li>
+          <li><a href="">Joel Turnbull</a></li>
+          <li><a href="">Mathilda Thompson</a></li>
+        </ul>
+      </div>
+
     </header>
 
-    <section id="main">
-      <input id="toggle-all" type="checkbox">
-      <label for="toggle-all">Mark all as complete</label>
-      <ul id="todo-list"></ul>
-    </section>
 
     <footer id="footer"></footer>
 
   </section>
 
 
+
+  <!-- Belows are templates -->
   <script type="text/template" id="item-template">
     <div class="view">
       <input class="toggle" type="checkbox" <%= completed ? 'checked' : '' %>>
