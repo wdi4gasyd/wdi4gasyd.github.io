@@ -1,15 +1,28 @@
-var Workspace = Backbone.Router.extend({
+//The game page does not have a route in backbone because it would increase page load too much.
+//Instead, the game page link will be a regular hyperlink on index. 
+
+var AppRouter = Backbone.Router.extend({
   routes: {
-    '*filter': 'setFilter'
+    '': 'index',
+    'index/:id': 'showStudent',  
+    '*anything': 'goHome'
   },
-  setFilter: function (param) {
-    if (param) {
-      param = param.trim();
-    }
-    app.TodoFilter = param || '';
-    app.Todos.trigger('filter');
+  index: function () {
+    var view = new AppView({collection: OurClass});
+    view.render();
+    console.log('you are at the index page');
+  },
+  showStudent: function (slug) {
+    var student = app.Students.get(slug);
+    new StudentView({model: student});
+    console.log('you have opened the student drop down')
+  },
+  goHome: function () {
+    document.location.hash = '';
   }
 });
 
-app.TodoRouter = new Workspace();
-Backbone.history.start();
+var router = new AppRouter();
+$(document).ready(function () {
+  Backbone.history.start();
+});
