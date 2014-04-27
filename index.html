@@ -22,21 +22,20 @@
     <!-- empty so we can append via js -->
   </div>
 
-
-  <script id="appView" type="text/x-underscore-template">
-  //this is the main container view for the landing page. 
-    <h1>GA WDI #4 - the latest and greatest</h1>
-    //give the list an id so we can target it later. 
+  <!-- main view for the landing page. -->
+  <!-- give the list an id so we can target it later. -->
+  <script id="appView" type="text/x-underscore-template"> 
+    <h1>GA WDI #4 - the latest and greatest</h1>  
     <ul id="students"></ul>
   </script>
-
+  
+  <!--View displays all students. Links to urls containing our names from the slug.-->  
   <script id="studentListView" type="text/x-underscore-template">
-  //View displays all students. Links to urls containing our names from the slug.
     <a href="#<%= slug %>"><%= name %></a>
   </script>
 
-  <script id="studentView" type="text/x-underscore-template">
-  //View displays full content for individual student. 
+  <!--View displays full content for individual student. -->
+  <script id="studentView" type="text/x-underscore-template">  
     <div class="student">
       <h1 class="name"><%= name %></h1>
       <div class="content">
