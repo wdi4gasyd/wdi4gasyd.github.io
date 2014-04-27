@@ -1,5 +1,7 @@
 var yearBook = yearBook || {};
 
+//seed objects for all students. Create one large object/var 
+
 
 yearBook.yearBookStudents = new yearBook.Students([
   new yearBook.Student({

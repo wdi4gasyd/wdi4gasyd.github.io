@@ -14,37 +14,36 @@
   <script src="js/router/router.js"></script>
   <script src="js/yearbook.js"></script>
   <link rel="stylesheet" href="css/style.css">
-
-
+  
 </head>
 <body>
   
-<div id="main">
-  <!-- empty so we can append via js -->
-</div>
-
-
-
-
-
-
-<script id="appView" type="text/x-underscore-template">
-  <h1>GA WDI #4 - the latest and greatest</h1>
-  <ul id="students"></ul>
-</script>
-
-<script id="studentListView" type="text/x-underscore-template">
-  <a href="#<%= slug %>"><%= name %></a>
-</script>
-
-<script id="studentView" type="text/x-underscore-template">
-  <div class="student">
-    <h1 class="name"><%= name %></h1>
-    <div class="content">
-      <%= aboutMe %>
-    </div>
+  <div id="main">
+    <!-- empty so we can append via js -->
   </div>
-</script>
+
+
+  <script id="appView" type="text/x-underscore-template">
+  //this is the main container view for the landing page. 
+    <h1>GA WDI #4 - the latest and greatest</h1>
+    //give the list an id so we can target it later. 
+    <ul id="students"></ul>
+  </script>
+
+  <script id="studentListView" type="text/x-underscore-template">
+  //View displays all students. Links to urls containing our names from the slug.
+    <a href="#<%= slug %>"><%= name %></a>
+  </script>
+
+  <script id="studentView" type="text/x-underscore-template">
+  //View displays full content for individual student. 
+    <div class="student">
+      <h1 class="name"><%= name %></h1>
+      <div class="content">
+        <%= aboutMe %>
+      </div>
+    </div>
+  </script>
 
 </body>
 </html>

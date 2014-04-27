@@ -8,3 +8,5 @@ yearBook.Student = Backbone.Model.extend({
     aboutMe: 'New student content'
   }
 });
+
+//Student is the name of the model that contains a single student. 

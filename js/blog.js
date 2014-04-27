@@ -34,7 +34,7 @@ var yearBookStudents = new Students([
   new Student({id:1, title:'Tom', slug: 'tom-dane', content:'Tom content'}),
   new Student({id:2, title:'Nix', slug: 'nix-siow', content:'Nix content'}),
   new Student({id:3, title:'Kriss', slug: 'kriss-heimanis', content:'Kriss content'}),
-  new Student({id:4, title:'Anne', slug: 'anne-homann', content:'Ane content'}),
+  new Student({id:4, title:'Anne', slug: 'anne-homann', content:'Anne content'}),
 ]);
 
 // 10 add the view 
