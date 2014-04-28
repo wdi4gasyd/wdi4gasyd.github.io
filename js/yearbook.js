@@ -185,5 +185,8 @@ yearBook.yearBookStudents = new yearBook.Students([
 
 yearBook.router = new yearBook.AppRouter ();
 $(document).ready(function(){
+  //fetch main container AppView and insert data from the Students collection.  
+  var view = new yearBook.AppView({collection: yearBook.yearBookStudents});
+  view.render();
   Backbone.history.start();
 });

@@ -13,10 +13,8 @@ yearBook.AppRouter = Backbone.Router.extend({
 
 
   index: function(){
-    //fetch main container AppView and insert data from the Students collection. 
-    var view = new yearBook.AppView({collection: yearBook.yearBookStudents});
-    view.render();
-    console.log('index page')
+    
+   console.log('index page')
   },
 
   
