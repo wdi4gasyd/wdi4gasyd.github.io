@@ -1,0 +1,85 @@
+body {
+	background: #fff;
+	color: #8a8c7e;
+	font-size: 100%;
+	line-height: 1.25;
+	font-family: 'Lato', 'Avenir Next', Arial, sans-serif;
+}
+
+a {
+	color: #99cc33;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: #373e18;
+}
+
+section button {
+	display: inline-block;
+	background: #a9a9a9;
+	color: #fff;
+	font-weight: 400;
+	padding: 10px 20px;
+	margin: 5px;
+	text-transform: uppercase;
+	border-radius: 2px;
+	letter-spacing: 1px;
+}
+
+section {
+	padding: 1em 2em 5em;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+section p {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+section button {
+	border: none;
+	padding: 15px 30px;
+	outline: none;
+	background: #85b91e;
+}
+
+.related > a {
+	border: 1px solid #99cc33;
+	display: inline-block;
+	text-align: center;
+	margin: 20px 10px;
+	padding: 25px;
+	color: #99cc33;
+	opacity: 0.8;
+	-webkit-transition: color 0.3s, border-color 0.3s;
+	transition: color 0.3s, border-color 0.3s;
+	-webkit-backface-visibility: hidden;
+}
+
+.related a:hover {
+	border-color: #82b222;
+	color: #82b222;
+}
+
+.related a img {
+	max-width: 100%;
+}
+
+.related a h3 {
+	margin: 0;
+	padding: 0.5em 0 0.3em;
+	max-width: 300px;
+	text-align: left;
+	font-size: 65%;
+	font-weight: 400;
+}
+
+@media screen and (max-width: 25em) {
+	.codrops-icon span {
+		display: none;
+	}
+}
