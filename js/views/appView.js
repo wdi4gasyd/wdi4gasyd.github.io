@@ -2,7 +2,7 @@ var yearBook = yearBook || {};
 
 yearBook.AppView = Backbone.View.extend({
   // where will this view be drawn
-  el: '#main',
+  el: 'header',
   
   // initialize by adding the template to the view
   initialize: function(){
@@ -12,7 +12,7 @@ yearBook.AppView = Backbone.View.extend({
 
   render: function(){
     // get this template and stick it into the el: element on page
-    this.$el.html(this.template());
+    this.$el.append(this.template());
 
     // now send all of this to the view for each item int he collections
     this.collection.each(function(student){

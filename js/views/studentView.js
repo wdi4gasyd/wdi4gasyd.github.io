@@ -1,7 +1,7 @@
 var yearBook = yearBook || {};
 
 yearBook.StudentView = Backbone.View.extend({
-  el: '#main',
+  el: '#content',
   
   initialize: function(){
     this.template = _.template($('#studentView').html() );
@@ -10,7 +10,7 @@ yearBook.StudentView = Backbone.View.extend({
 
   render: function(){
     $('.student').fadeOut();
-    this.$el.append(this.template(this.model.toJSON() ) )
+    this.$el.prepend(this.template(this.model.toJSON() ) )
   }
 
 })

@@ -14,14 +14,20 @@
   <script src="js/router/router.js"></script>
   <script src="js/yearbook.js"></script>
   <link rel="stylesheet" href="css/style.css">
-
-
 </head>
 <body>
   
-<div id="main">
-  <!-- empty so we can append via js -->
-</div>
+  <div id="main">
+    <header>
+      <div class="torch" id="torch-left"><span class="burn">torch</span></div>
+      <div class="torch" id="torch-right"></div>
+      <!-- this is where the sprites will need to be appended to -->
+    </header>
+    <div id="content">
+      <h1>GA WDI 4</h1>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+    </div>
+  </div>
 
 
 
@@ -29,8 +35,8 @@
 
 
 <script id="appView" type="text/x-underscore-template">
-  <h1>GA WDI #4 - the latest and greatest</h1>
   <ul id="students"></ul>
+  <div id="student-bio"></div>
 </script>
 
 <script id="studentListView" type="text/x-underscore-template">
@@ -38,10 +44,17 @@
 </script>
 
 <script id="studentView" type="text/x-underscore-template">
-  <div class="student">
+  <div class="student <%= name %>">
     <h1 class="name"><%= name %></h1>
-    <div class="content">
-      <%= aboutMe %>
+    <div id="details-main">
+      <div class="column photo">headshot</div>
+      <div class="column bio"><%= aboutMe %></div>
+      <div class="column contact">contact details</div>
+    </div>
+    <div id="details-projects">
+      <div class="column project-01">project 1 image with a nice rollover to display the details underneath</div>
+      <div class="column project-02">project 2 image with a nice rollover to display the details underneath</div>
+      <div class="column project-03">project 3 image with a nice rollover to display the details underneath</div>
     </div>
   </div>
 </script>
