@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Backbone Blog</title>
+  <link rel="stylesheet" href="css/style.css" >
   <script src="js/lib/jquery.js"></script>
   <script src="js/lib/underscore.js"></script>
   <script src="js/lib/backbone.js"></script>
@@ -13,20 +14,19 @@
   <script src="js/views/studentView.js"></script>
   <script src="js/router/router.js"></script>
   <script src="js/yearbook.js"></script>
-  <link rel="stylesheet" href="css/style.css">
-
+  
 </head>
 <body>
-  
   <div id="main">
     <header>
-      <div class="torch" id="torch-left"><span class="burn">torch</span></div>
-      <div class="torch" id="torch-right"></div>
-      <!-- this is where the sprites will need to be appended to -->
+        <div class="torch" id="torch-left"><img src="img/flame-fucking.gif" alt="flaming torches batman!"></div>
+        <div class="torch" id="torch-right"><img src="img/flame-fucking.gif" alt="flaming torches batman!"></div>
+        <!-- this is where the sprites will need to be appended to -->
     </header>
     <div id="content">
-      <h1>GA WDI 4</h1>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+      <h1>WDI SYD FEB 14</h1>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+      <p>qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
     </div>
   </div>
 
@@ -37,7 +37,6 @@
 
 <script id="appView" type="text/x-underscore-template">
   <ul id="students"></ul>
-  <div id="student-bio"></div>
 </script>
 
 <script id="studentListView" type="text/x-underscore-template">
