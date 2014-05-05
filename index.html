@@ -22,7 +22,12 @@
     <header>
       <div class="torch" id="torch-left"><span class="burn">torch</span></div>
       <div class="torch" id="torch-right"></div>
-      <!-- this is where the sprites will need to be appended to -->
+      <!-- Append the student sprites to the header. We will add the JS animations in appView.js. When we have all sprites, we can use a loop to interpolate our names -->      
+      <div class="character">
+        <div class="viewer">
+           <img  class="home_sprite" src="assets/ollysprite.png">
+        </div>
+      </div>        
     </header>
     <div id="content">
       <h1>GA WDI 4</h1>
@@ -31,10 +36,8 @@
   </div>
 
 
-
-
-
-
+  
+<!--View displays all students. Links to urls containing our names from the slug.--> 
 <script id="appView" type="text/x-underscore-template">
   <ul id="students"></ul>
   <div id="student-bio"></div>
@@ -58,6 +61,51 @@
       <div class="column project-03">project 3 image with a nice rollover to display the details underneath</div>
     </div>
   </script>
+
+  <script>
+  //script to move sprite. We will move into a better spot soon. 
+  $(document).ready(function() {
+      console.log('fishes')
+       if ($(".home_sprite").length > 0) {
+        
+        var windowHeight = $(window).height();
+        var sprite = $(".home_sprite");
+        var currentPos = parseInt(sprite.css("right"));
+        var height = parseInt(sprite.css("height"));
+        // The following two functions turn the homepage sprites back and forth
+        // This turns the sprite right -------------------------------
+        function turnCharacterRight (){
+          if (currentPos < 256){
+            currentPos = currentPos + 32;
+            sprite.css({
+             right: currentPos
+           });
+            setTimeout(turnCharacterRight, 500);
+          }else {
+            turnCharacterLeft();
+          }
+        };   
+    
+    // This turns the sprite left -------------------------------------
+      function turnCharacterLeft() {
+        if (currentPos > 0){
+          currentPos = currentPos - 32;
+          sprite.css({
+          right: currentPos
+         });
+          setTimeout(turnCharacterLeft, 500);
+        }else {
+          turnCharacterRight();
+        }
+      };
+
+         turnCharacterRight();
+
+     }    
+
+    });
+
+    </script>
 
 </body>
 </html>
