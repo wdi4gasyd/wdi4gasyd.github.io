@@ -13,20 +13,11 @@ yearBook.AppRouter = Backbone.Router.extend({
 
 
   index: function(){
-    
    console.log('index page')
   },
 
   
   showStudent: function(slug){
-
-
-    var view = new yearBook.AppView({collection: yearBook.yearBookStudents});
-    view.render();
-
-    // setup the student in question from the id in the url
-    
-
     var student = yearBook.yearBookStudents.get(slug);
     //fetch the StudentView from index.html and insert the student data. 
     new yearBook.StudentView({model: student});
