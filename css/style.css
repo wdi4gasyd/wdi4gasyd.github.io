@@ -81,7 +81,31 @@ header{
   margin-right: 0;
 }
 
+/* student sprite animation css */
+.character {
+  text-align: center;
+  display: inline-block;
+  /*position the sprite on the header */
+  margin-top: 177px;
+  margin-left: 568px;
 
+}
+.viewer {
+  position: relative;
+  /*make only a small section of it visible */
+  width: 32px;
+  height: 60px;
+  overflow: hidden;
+}
+.home_sprite {
+  position: relative;
+  right: 0;
+}
+/* display the student names on one line - later these will be the sprites */
+#students li {
+
+  display:inline;
+}
 
 /* flame effect */
 
