@@ -16,12 +16,17 @@ h1, h2, h3, h4, h5, h6{
 }
 h1{
   font-size: 3em;
+  margin: 0;
+  padding: 40px 0 25px 0;
 }
 ul, li{
   cursor: pointer;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+p{
+  margin: .2em 0 1.8em 0;
 }
 
 
@@ -31,13 +36,13 @@ ul, li{
   max-width: 960px;
   margin: 0 auto;
   padding: 0;
-  box-shadow: 2px 0px 5px 2px rgba(0,0,0,0.3);
+  
   background: #172940 url(../img/bg-tiled-center-02.png) center top repeat-x;
 }
 /* no nav here - this is just a container for the little usses to run around in */
 header{
   width: 100%;
-  height: 306px;
+  height: 290px;
   display: block;
   position: relative;
   margin: 0;
@@ -64,7 +69,8 @@ header{
 /* all actual content will be in here - give it some padding */
 #content{
   color: #FFF;
-  padding: 0 4%;
+  padding: 0 4% 20px 4%;
+  box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.4);
 }
 
 /* the student info area - where all our info will live - in three columns */
@@ -84,31 +90,46 @@ header{
 
 
 /* flame effect */
+.testanimation{
+  -webkit-transition-duration: 5000ms;
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transform: translate(-320px, 0px);
+  animation: newanimation 1s;
+}
+keyframes testanimation{
+  0% {color: red;}
+  50% {color: blue;}
+  100& {color: green;}
+}
 
-.fire {
-  animation: animation 1s ease-in-out infinite alternate;
-  -moz-animation: animation 1s ease-in-out infinite alternate;
-  -webkit-animation: animation 1s ease-in-out infinite alternate;
-  -o-animation: animation 1s ease-in-out infinite alternate;
+
+
+.fire{
+  -webkit-animation: FLAMES 1s infinite;
+  -moz-animation: FLAMES 1s infinite;
+  -o-animation: FLAMES 1s infinite;
+  animation: FLAMES 1s infinite;
 }
 
 .burn {
-  animation: animation .65s ease-in-out infinite alternate;
-  -moz-animation: animation .65s ease-in-out infinite alternate;
-  -webkit-animation: animation .65s ease-in-out infinite alternate;
-  -o-animation: animation .65s ease-in-out infinite alternate;
+  animation: FLAMES .65s infinite alternate;
+  -moz-animation: FLAMES .65s infinite alternate;
+  -webkit-animation: FLAMES .65s infinite alternate;
+  -o-animation: FLAMES .65s infinite alternate;
 }
 
-@keyframes animation
-{
-0% {text-shadow: 0 0 20px #fefcc9,
+@keyframes FLAMES{
+  0% {background: red;}
+  100% {background: blue;}
+}
+/*0% {box-shadow: 0 0 20px #fefcc9,
   10px -10px 30px #feec85,
   -20px -20px 40px #ffae34,
   20px -40px 50px #ec760c,
   -20px -60px 60px #cd4606,
   0 -80px 70px #973716,
   10px -90px 80px #451b0e;}
-100% {text-shadow: 0 0 20px #fefcc9,
+100% {box-shadow: 0 0 20px #fefcc9,
   10px -10px 30px #fefcc9,
   -20px -20px 40px #feec85,
   22px -42px 60px #ffae34,
@@ -117,16 +138,15 @@ header{
   10px -90px 80px  #973716;}
 }
 
-@-moz-keyframes animation
-{
-0% {text-shadow: 0 0 20px #fefcc9,
+@-moz-keyframes animation{
+0% {box-shadow: 0 0 20px #fefcc9,
   10px -10px 30px #feec85,
   -20px -20px 40px #ffae34,
   20px -40px 50px #ec760c,
   -20px -60px 60px #cd4606,
   0 -80px 70px #973716,
   10px -90px 80px #451b0e;}
-100% {text-shadow: 0 0 20px #fefcc9,
+100% {box-shadow: 0 0 20px #fefcc9,
   10px -10px 30px #fefcc9,
   -20px -20px 40px #feec85,
   22px -42px 60px #ffae34,
@@ -137,14 +157,14 @@ header{
 
 @-webkit-keyframes animation
 {
-0% {text-shadow: 0 0 20px #fefcc9,
+0% {box-shadow: 0 0 20px #fefcc9,
   10px -10px 30px #feec85,
   -20px -20px 40px #ffae34,
   20px -40px 50px #ec760c,
   -20px -60px 60px #cd4606,
   0 -80px 70px #973716,
   10px -90px 80px #451b0e;}
-100% {text-shadow: 0 0 20px #fefcc9,
+100% {box-shadow: 0 0 20px #fefcc9,
   10px -10px 30px #fefcc9,
   -20px -20px 40px #feec85,
   22px -42px 60px #ffae34,
@@ -155,21 +175,21 @@ header{
 
 @-o-keyframes animation
 {
-0% {text-shadow: 0 0 20px #fefcc9,
+0% {box-shadow: 0 0 20px #fefcc9,
   10px -10px 30px #feec85,
   -20px -20px 40px #ffae34,
   20px -40px 50px #ec760c,
   -20px -60px 60px #cd4606,
   0 -80px 70px #973716,
   10px -90px 80px #451b0e;}
-100% {text-shadow: 0 0 20px #fefcc9,
+100% {box-shadow: 0 0 20px #fefcc9,
   10px -10px 30px #fefcc9,
   -20px -20px 40px #feec85,
   22px -42px 60px #ffae34,
   -22px -58px 50px #ec760c,
   0 -82px 80px #cd4606,
   10px -90px 80px  #973716;}
-}
+}*/
 
 
 
