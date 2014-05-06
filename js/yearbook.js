@@ -63,7 +63,7 @@ yearBook.yearBookStudents = new yearBook.Students([
   }),
   new yearBook.Student({
     name: 'Olly',
-    slug: 'olly-name',
+    slug: 'olly-dutton',
     photoURL: 'tba',
     aboutMe: 'your bio',
     portfolioImage1: 'tba',
@@ -120,7 +120,7 @@ yearBook.yearBookStudents = new yearBook.Students([
   }),
   new yearBook.Student({
     name: 'Erik',
-    slug: 'erik-name',
+    slug: 'erik-froese',
     photoURL: 'tba',
     aboutMe: 'your bio',
     portfolioImage1: 'tba',

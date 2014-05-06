@@ -18,7 +18,9 @@ yearBook.AppView = Backbone.View.extend({
     this.collection.each(function(student){
       var view = new yearBook.StudentListView({model: student});
       view.render();
-      $('#students').append(view.el);
+      $('header').append(view.el);
     });
   }
+
+  
 });

@@ -2,20 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Backbone Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>WDI4 Yearbook</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
   <link rel="stylesheet" href="css/style.css" >
+  <script src="js/lib/snap.svg-min.js"></script>
+  <script src="js/lib/modernizr.custom.js"></script>
   
   
 </head>
 <body>
   <div id="main">
     <header>
-        <div class="torch testanimation" id="torch-left"><img src="img/flame-fucking.gif" alt="flaming torches batman!"><span class="fire">fire</span></div>
-        <div class="torch" id="torch-right"><img src="img/flame-fucking.gif" alt="flaming torches batman!"></div>
-        <!-- this is where the sprites will need to be appended to -->
+        <div class="torch" id="torch-left"><img src="img/flame-fucking.gif" alt="flaming torches batman!"></div>
+        <div class="torch" id="torch-right"><img src="img/flame-fucking.gif" alt="flaming torches batman!"></div>     
+      <!-- Append the student sprites to the header. We will add the JS animations in appView.js. When we have all sprites, we can use a loop to interpolate our names -->      
+      <!--<div class="character">
+        <div class="viewer">
+           <img  class="home_sprite" src="assets/ollysprite.png">
+        </div>
+      </div>  -->      
     </header>
+
+
     <div id="content">
       <h1>WDI SYD FEB 14</h1>
+      <div>
+        <button id="trigger-overlay" type="button">Play</button>
+      </div>
       <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
       <p>qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
     </div>
@@ -24,14 +38,59 @@
 
 
 
+  <!-- open/close -->
+  <div class="overlay overlay-boxes">
+    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="101%" viewBox="0 0 1440 806" preserveAspectRatio="none">
+      <path d="m0.005959,200.364029l207.551124,0l0,204.342453l-207.551124,0l0,-204.342453z"/>
+      <path d="m0.005959,400.45401l207.551124,0l0,204.342499l-207.551124,0l0,-204.342499z"/>
+      <path d="m0.005959,600.544067l207.551124,0l0,204.342468l-207.551124,0l0,-204.342468z"/>
+      <path d="m205.752151,-0.36l207.551163,0l0,204.342437l-207.551163,0l0,-204.342437z"/>
+      <path d="m204.744629,200.364029l207.551147,0l0,204.342453l-207.551147,0l0,-204.342453z"/>
+      <path d="m204.744629,400.45401l207.551147,0l0,204.342499l-207.551147,0l0,-204.342499z"/>
+      <path d="m204.744629,600.544067l207.551147,0l0,204.342468l-207.551147,0l0,-204.342468z"/>
+      <path d="m410.416046,-0.36l207.551117,0l0,204.342437l-207.551117,0l0,-204.342437z"/>
+      <path d="m410.416046,200.364029l207.551117,0l0,204.342453l-207.551117,0l0,-204.342453z"/>
+      <path d="m410.416046,400.45401l207.551117,0l0,204.342499l-207.551117,0l0,-204.342499z"/>
+      <path d="m410.416046,600.544067l207.551117,0l0,204.342468l-207.551117,0l0,-204.342468z"/>
+      <path d="m616.087402,-0.36l207.551086,0l0,204.342437l-207.551086,0l0,-204.342437z"/>
+      <path d="m616.087402,200.364029l207.551086,0l0,204.342453l-207.551086,0l0,-204.342453z"/>
+      <path d="m616.087402,400.45401l207.551086,0l0,204.342499l-207.551086,0l0,-204.342499z"/>
+      <path d="m616.087402,600.544067l207.551086,0l0,204.342468l-207.551086,0l0,-204.342468z"/>
+      <path d="m821.748718,-0.36l207.550964,0l0,204.342437l-207.550964,0l0,-204.342437z"/>
+      <path d="m821.748718,200.364029l207.550964,0l0,204.342453l-207.550964,0l0,-204.342453z"/>
+      <path d="m821.748718,400.45401l207.550964,0l0,204.342499l-207.550964,0l0,-204.342499z"/>
+      <path d="m821.748718,600.544067l207.550964,0l0,204.342468l-207.550964,0l0,-204.342468z"/>
+      <path d="m1027.203979,-0.36l207.550903,0l0,204.342437l-207.550903,0l0,-204.342437z"/>
+      <path d="m1027.203979,200.364029l207.550903,0l0,204.342453l-207.550903,0l0,-204.342453z"/>
+      <path d="m1027.203979,400.45401l207.550903,0l0,204.342499l-207.550903,0l0,-204.342499z"/>
+      <path d="m1027.203979,600.544067l207.550903,0l0,204.342468l-207.550903,0l0,-204.342468z"/>
+      <path d="m1232.659302,-0.36l207.551147,0l0,204.342437l-207.551147,0l0,-204.342437z"/>
+      <path d="m1232.659302,200.364029l207.551147,0l0,204.342453l-207.551147,0l0,-204.342453z"/>
+      <path d="m1232.659302,400.45401l207.551147,0l0,204.342499l-207.551147,0l0,-204.342499z"/>
+      <path d="m1232.659302,600.544067l207.551147,0l0,204.342468l-207.551147,0l0,-204.342468z"/>
+      <path d="m-0.791443,-0.360001l207.551163,0l0,204.342438l-207.551163,0l0,-204.342438z"/>
+    </svg>
+
+    <button type="button" class="overlay-close">Close</button>
+    <nav>
+      <div class="game_container">
+        <h2>Game goes here</h2>
+      </div>
+    </nav>
+  </div>
 
 
+<!--View displays all students. Links to urls containing our names from the slug.--> 
 <script id="appView" type="text/x-underscore-template">
-  <ul id="students"></ul>
+  
 </script>
 
 <script id="studentListView" type="text/x-underscore-template">
-  <a href="#<%= slug %>"><%= name %></a>
+  <div class="character <%= slug %>">
+    <div class="viewer">
+       <img  class="home_sprite" src="assets/<%= slug %>-sprite.png">
+    </div>
+  </div>  
 </script>
 
 <script id="studentView" type="text/x-underscore-template">
@@ -40,14 +99,33 @@
     <div id="details-main">
       <div class="column photo">headshot</div>
       <div class="column bio"><%= aboutMe %></div>
-      <div class="column contact">contact details</div>
+      <div class="column contact">
+        <a href="http://www.linkedin.com/"><img class="social-icon" src="img/Linkedin-Icon.png"/></a>
+        <a href="http://www.twitter.com/"><img class="social-icon" src="img/Twitter-Icon.png"/></a>
+        <a href="http://www.github.com/"><img class="social-icon" src="img/Github-Icon.png"/></a>
+        <a href="#"><img class="social-icon" src="img/Email-Icon.png"/></a>
+      </div>
     </div>
     <div id="details-projects">
       <div class="column project-01">project 1 image with a nice rollover to display the details underneath</div>
       <div class="column project-02">project 2 image with a nice rollover to display the details underneath</div>
       <div class="column project-03">project 3 image with a nice rollover to display the details underneath</div>
     </div>
+
+    <section class="related">
+      <p>All Projects</p>
+      <a href="#">
+        <img src="http://goo.gl/x6qPmJ" />
+        <h3>Project One - Description</h3>
+      </a>
+
+      <a href="#">
+        <img src="http://goo.gl/x6qPmJ" />
+        <h3>Project Two - Description</h3>
+      </a>
+    </section><hr>
   </script>
+
   <script src="js/lib/jquery.js"></script>
   <script src="js/lib/underscore.js"></script>
   <script src="js/lib/backbone.js"></script>
@@ -58,5 +136,63 @@
   <script src="js/views/studentView.js"></script>
   <script src="js/router/router.js"></script>
   <script src="js/yearbook.js"></script>
+  <script src="js/lib/classie.js"></script>
+  <script src="js/lib/grid_effect.js"></script>
+
+  <script>
+  //script to move sprite. Should be moved into a backbone view once working.
+  $(document).ready(function() {
+ 
+        if ($(".home_sprite").length > 0) {        
+            var currentSprite = $(".home_sprite")
+            var sprite = $(".home_sprite");
+            var currentPos = parseInt(sprite.css("right"));
+            var windowWidth = $('header').innerWidth();
+            console.log(windowWidth)
+            var $character = currentSprite.closest('.character')
+         
+            console.log($character)
+            var characterPosition = 0
+            console.log(characterPosition)
+            function walkRight () {  
+
+              $character.css('left', characterPosition + 'px')
+              characterPosition +=10
+              console.log(characterPosition)
+              //characterPosition.left ++
+            }
+            //setTimeout(walkRight, 100);
+
+            // The following two functions turn the homepage sprites back and forth
+            // This turns the sprite right -------------------------------
+            function turnCharacterRight (){
+              setTimeout(walkRight, 1);
+              if (currentPos < 256){
+                currentPos = currentPos + 32;
+                sprite.css({
+                  right: currentPos
+                });
+                setTimeout(turnCharacterRight, 500);
+              }else {
+                turnCharacterLeft();
+              }
+            };      
+            // This turns the sprite left -------------------------------------
+            function turnCharacterLeft() {
+              if (currentPos > 0){
+                currentPos = currentPos - 32;
+                sprite.css({
+                right: currentPos
+               });
+                setTimeout(turnCharacterLeft, 500);
+              }else {
+                turnCharacterRight();
+              }
+            };
+            turnCharacterRight();
+        }    
+  });
+  </script>
+
 </body>
 </html>

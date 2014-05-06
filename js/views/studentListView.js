@@ -1,7 +1,7 @@
 var yearBook = yearBook || {};
 
 yearBook.StudentListView = Backbone.View.extend({
-  tagName: 'li',
+  tagName: 'div',
 
   events: {
     'click': 'viewStudent'
@@ -13,6 +13,7 @@ yearBook.StudentListView = Backbone.View.extend({
 
   render: function(){
     this.$el.html(this.template(this.model.toJSON() ) );
+    //here we also want to attach their respective sprite. 
   },
 
   // this method is called by the click event defined above

@@ -78,7 +78,7 @@ header{
   display: inline-block;
   width: 30%;
   margin: 5px 2%;
-  background: #F60;
+  /*background: #F60;*/
 }
 .student .column:first-child{
   margin-left: 0;
@@ -87,7 +87,37 @@ header{
   margin-right: 0;
 }
 
+/* student sprite animation css */
+.character {
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 190px;
+  /*position the sprite on the header */
+}
 
+.viewer {
+  position: relative;
+  /*make only a small section of it visible */
+  width: 32px;
+  height: 60px;
+  overflow: hidden;
+}
+
+.home_sprite {
+  position: relative;
+  right: 0;
+}
+
+/* display the student names on one line - later these will be the sprites */
+#students li {
+  display:inline;
+}
+
+.social-icon {
+  width: 90px;
+}
 
 /* flame effect */
 .testanimation{
@@ -193,3 +223,163 @@ keyframes testanimation{
 
 
 
+
+a {
+  color: #99cc33;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover, a:focus {
+  color: #373e18;
+}
+
+div button {
+  display: inline-block;
+  background: #a9a9a9;
+  color: #fff;
+  font-weight: 400;
+  padding: 10px 20px;
+  margin: 5px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  letter-spacing: 1px;
+  border: none;
+  padding: 15px 30px;
+  outline: none;
+  background: #85b91e;
+}
+
+section {
+  padding: 1em 2em 5em;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+section p {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.related > a {
+  border: 1px solid #99cc33;
+  display: inline-block;
+  text-align: center;
+  margin: 20px 10px;
+  padding: 25px;
+  color: #99cc33;
+  opacity: 0.8;
+  -webkit-transition: color 0.3s, border-color 0.3s;
+  transition: color 0.3s, border-color 0.3s;
+  -webkit-backface-visibility: hidden;
+}
+
+.related a:hover {
+  border-color: #82b222;
+  color: #82b222;
+}
+
+.related a img {
+  max-width: 100%;
+}
+
+.related a h3 {
+  margin: 0;
+  padding: 0.5em 0 0.3em;
+  max-width: 300px;
+  text-align: left;
+  font-size: 65%;
+  font-weight: 400;
+}
+
+
+/* Overlay style */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(153,204,51,0.9);
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  overflow: hidden;
+  border: none;
+  background: url(../img/cross.png) no-repeat center center;
+  text-indent: 200%;
+  color: transparent;
+  outline: none;
+  z-index: 100;
+}
+
+/* overlay style */
+.overlay nav {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  height: 60%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+/* Effects */
+.overlay-boxes {
+  background: transparent;
+  visibility: hidden;
+  -webkit-transition: visibility 0s 0.8s;
+  transition: visibility 0s 0.8s;
+}
+
+.overlay-boxes.open {
+  visibility: visible;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.overlay-boxes svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.overlay-boxes svg path {
+  /*fill: rgb(153,204,51);*/
+  fill: #ff5c6f;
+  display: none;
+}
+
+.overlay-boxes nav,
+.overlay-boxes .overlay-close {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s 0.8s;
+  transition: opacity 0.5s 0.8s;
+}
+
+.overlay-boxes.open nav,
+.overlay-boxes.open .overlay-close {
+  opacity: 1;
+  -webkit-transition-delay: 0.8s;
+  transition-delay: 0.8s;
+}
+
+.overlay-boxes.close nav,
+.overlay-boxes.close .overlay-close {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+@media screen and (max-height: 30.5em) {
+  .overlay nav {
+    height: 70%;
+    font-size: 34px;
+  }
+}
