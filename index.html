@@ -69,12 +69,12 @@
   <script>
   //script to move sprite. Should be moved into a backbone view once working.
   $(document).ready(function() {
-      console.log('fishes')
+ 
         if ($(".home_sprite").length > 0) {        
-            var windowHeight = $(window).height();
+          
             var sprite = $(".home_sprite");
             var currentPos = parseInt(sprite.css("right"));
-            var height = parseInt(sprite.css("height"));
+           
             // The following two functions turn the homepage sprites back and forth
             // This turns the sprite right -------------------------------
             function turnCharacterRight (){
