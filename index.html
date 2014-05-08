@@ -6,6 +6,7 @@
   <title>WDI4 Yearbook</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css" />
   <link rel="stylesheet" href="css/style.css" >
+  <link rel="stylesheet" href="css/sprite.css" >
   <script src="js/lib/snap.svg-min.js"></script>
   <script src="js/lib/modernizr.custom.js"></script>
   
@@ -15,13 +16,7 @@
   <div id="main">
     <header>
         <div class="torch" id="torch-left"><img src="img/flame-fucking.gif" alt="flaming torches batman!"></div>
-        <div class="torch" id="torch-right"><img src="img/flame-fucking.gif" alt="flaming torches batman!"></div>     
-      <!-- Append the student sprites to the header. We will add the JS animations in appView.js. When we have all sprites, we can use a loop to interpolate our names -->      
-      <!--<div class="character">
-        <div class="viewer">
-           <img  class="home_sprite" src="assets/ollysprite.png">
-        </div>
-      </div>  -->      
+        <div class="torch" id="torch-right"><img src="img/flame-fucking.gif" alt="flaming torches batman!"></div>          
     </header>
 
 
@@ -86,10 +81,8 @@
 </script>
 
 <script id="studentListView" type="text/x-underscore-template">
-  <div class="character <%= slug %>">
-    <div class="viewer">
-       <img  class="home_sprite" src="assets/<%= slug %>-sprite.png">
-    </div>
+  <div class="viewer">
+    <img  class="home_sprite" src="assets/<%= slug %>-sprite.png">
   </div>  
 </script>
 
@@ -152,13 +145,13 @@
             var $character = currentSprite.closest('.character')
          
             console.log($character)
-            var characterPosition = 0
-            console.log(characterPosition)
+            //var characterPosition = 0
+            //console.log(characterPosition)
             function walkRight () {  
 
-              $character.css('left', characterPosition + 'px')
-              characterPosition +=10
-              console.log(characterPosition)
+              //$character.css('left', characterPosition + 'px')
+              //characterPosition +=10
+              //console.log(characterPosition)
               //characterPosition.left ++
             }
             //setTimeout(walkRight, 100);

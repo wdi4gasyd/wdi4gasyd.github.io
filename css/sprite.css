@@ -1,0 +1,21 @@
+/* student sprite animation css */
+.character {
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 190px;
+  /*position the sprite on the header */
+}
+
+.viewer {
+  position: relative;
+  /*make only a small section of it visible */
+  width: 32px;
+  height: 60px;
+  overflow: hidden;
+}
+
+.home_sprite {
+  position: relative;
+  right: 0;
+}

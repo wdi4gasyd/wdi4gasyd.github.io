@@ -82,7 +82,7 @@ yearBook.yearBookStudents = new yearBook.Students([
   }),
   new yearBook.Student({
     name: 'Charlie',
-    slug: 'charlie-name',
+    slug: 'charlie-gerard',
     photoURL: 'tba',
     aboutMe: 'your bio',
     portfolioImage1: 'tba',
@@ -101,7 +101,7 @@ yearBook.yearBookStudents = new yearBook.Students([
   }),
   new yearBook.Student({
     name: 'Anne',
-    slug: 'anne-name',
+    slug: 'anne-homann',
     photoURL: 'tba',
     aboutMe: 'your bio',
     portfolioImage1: 'tba',
@@ -139,7 +139,7 @@ yearBook.yearBookStudents = new yearBook.Students([
   }),
   new yearBook.Student({
     name: 'Mark',
-    slug: 'mark-name',
+    slug: 'mark-pereira',
     photoURL: 'tba',
     aboutMe: 'your bio',
     portfolioImage1: 'tba',
@@ -158,7 +158,7 @@ yearBook.yearBookStudents = new yearBook.Students([
   }),
   new yearBook.Student({
     name: 'Simon',
-    slug: 'simon-name',
+    slug: 'simon-taylor',
     photoURL: 'tba',
     aboutMe: 'your bio',
     portfolioImage1: 'tba',
@@ -181,12 +181,17 @@ yearBook.yearBookStudents = new yearBook.Students([
 
 ]);
 
-
-
 yearBook.router = new yearBook.AppRouter ();
+
 $(document).ready(function(){
   //fetch main container AppView and insert data from the Students collection.  
   var view = new yearBook.AppView({collection: yearBook.yearBookStudents});
   view.render();
   Backbone.history.start();
+
+  // we will need some dom elements, let's set variables here
+  
+
+
+
 });
