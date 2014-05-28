@@ -42,9 +42,6 @@ yearBook.StudentListView = Backbone.View.extend({
   walkTime: function(direction, student) {
     student.direction = direction
 
-
-
-
     setInterval(function () {
       student.thisPos = parseInt(student.css('left') );
       if (student.thisPos <= 0 ) {
@@ -67,14 +64,6 @@ yearBook.StudentListView = Backbone.View.extend({
           'border' : 'solid 3px #F09'
         });
       }
-
-      
-
-      
-
-
-
-
     }, 100)
   }
   // walkLeft: function(){
