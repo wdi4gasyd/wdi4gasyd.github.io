@@ -21,6 +21,5 @@ yearBook.AppView = Backbone.View.extend({
       $('header').append(view.el);
     });
   }
-
   
 });

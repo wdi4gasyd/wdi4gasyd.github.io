@@ -20,7 +20,7 @@ yearBook.StudentListView = Backbone.View.extend({
     this.$el.addClass(this.model.get('slug'));
     // give the element a random starting position on the stage
     this.leftPos = ( Math.floor(Math.random() * ( this.windowWidth - 32) ) );
-    this.$el.css({'left': this.leftPos + 'px', 'border': '1px solid #FFF'});
+    this.$el.css({'left': this.leftPos + 'px'});
     thisName = this.model.get('slug');
     // NEXT - add a function for walk left, walk right, and some way of selecting the correct function
     // randomly apply walkLeft or walkRight to start them off
@@ -40,31 +40,59 @@ yearBook.StudentListView = Backbone.View.extend({
   },
 
   walkTime: function(direction, student) {
-    student.direction = direction
+    student.direction = direction;
+    student.sprite = student.find('.home_sprite');
 
     setInterval(function () {
-      student.thisPos = parseInt(student.css('left') );
-      if (student.thisPos <= 0 ) {
-        student.direction = 'right'
-        console.log('limit - now go ' + student.direction)
-      }
-      if (student.thisPos >= 928 ) {
-        student.direction = 'left'
-        console.log('limit - now go ' + student.direction)
-      }
+    
+      var randomAwesome = Math.floor(Math.random() * 100) + 1 ;
+      if (randomAwesome === 1){
+        student.randomFace = true;
+        student.randomTime = 1;
+      };
 
-      if (student.direction === 'left') {
-        student.css({
-          'left': (student.thisPos - 1) + 'px',
-          'border' : 'solid 3px #F40'
-        });
-      } else {     
-        student.css({
-          'left': (student.thisPos + 1) + 'px',
-          'border' : 'solid 3px #F09'
-        });
+      if ( (student.randomFace === true) && (student.randomTime <= 7) ) {
+        student.randomTime ++ 
+        student.sprite.css({'right' : '128px'});
+        student.addClass('bounce');
+      } else {
+        student.removeClass('bounce')
+        
+
+
+
+        student.thisPos = parseInt(student.css('left') );
+        
+        if (student.thisPos <= 0 ) {
+          student.direction = 'right';
+          console.log('limit - now go ' + student.direction);
+        }
+        if (student.thisPos >= 928 ) {
+          student.direction = 'left';
+          console.log('limit - now go ' + student.direction);
+        }
+
+        if (student.direction === 'left') {
+          student.css({
+            'left': (student.thisPos - 3) + 'px'
+          });
+          if (student.thisPos % 2 === 0) {
+            student.sprite.css({'right' : '64px'})
+          } else {
+            student.sprite.css({'right' : '32px'})
+          }
+        } else {     
+          student.css({
+            'left': (student.thisPos + 3) + 'px'
+          });
+          if (student.thisPos % 2 === 0) {
+            student.sprite.css({'right' : '160px'})
+          } else {
+            student.sprite.css({'right' : '192px'})
+          }
+        }
       }
-    }, 100)
+    }, 200)
   }
   // walkLeft: function(){
   //   var thisPos = parseInt($(this.el).css('left'));
