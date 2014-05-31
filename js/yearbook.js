@@ -122,7 +122,7 @@ yearBook.yearBookStudents = new yearBook.Students([
     name: 'Erik',
     slug: 'erik-froese',
     photoURL: 'img/Erik.JPG',
-    aboutMe: 'Part computer, part typewriter, the Erik Froese 9000 was manufactured for all your communication needs. Check out the instruction manual on LinkedIn to find out more.',
+    aboutMe: 'Part computer, part typewriter, the Erik Froese 9000 was manufactured for all your communication and programming needs. Check out the instruction manual on LinkedIn to find out more.',
     portfolioImage1: 'img/badhairdaypredictor.png',
     portfolioImage2: 'img/butterflyeffect.png',
     portfolioImage3: 'img/magneticpoetry.png',
