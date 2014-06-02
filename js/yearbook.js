@@ -26,21 +26,21 @@ yearBook.yearBookStudents = new yearBook.Students([
   new yearBook.Student({
     name: 'Nix',
     slug: 'nix-siow',
-    photoURL: 'tba',
-    aboutMe: 'your bio',
+    photoURL: 'img/Nix.JPG',
+    aboutMe: 'I am a full stack web developer focusing on Javascript and Ruby on Rails. I am passionate about front end technologies such as jQuery, Backbone, CSS3 and HTML5. I am doing a pivot from my real estate business and starting my career as a web developer in Sydney. I love to code and excited to work on products that bring value to people.',
     portfolioImage1: 'tba',
     portfolioImage2: 'tba',
     portfolioImage3: 'tba',
     portfolioURL1: 'tba',
-    portfolioURL2: 'tba',
+    portfolioURL2: 'https://demochattic.herokuapp.com/',
     portfolioURL3: 'tba',
     portfolioBlurb1: 'tba',
     portfolioBlurb2: 'tba',
     portfolioBlurb3: 'tba',
-    github: 'https://github.com/thomasdane',
-    twitter: 'https://twitter.com/tomjdane',
-    linkedin: '',
-    email: ''
+    github: 'https://github.com/nixsiow',
+    twitter: 'https://twitter.com/nixsiow',
+    linkedin: 'http://www.linkedin.com/in/nixsiow',
+    email: 'nixsiow@hotmail.com'
   }),
   new yearBook.Student({
     name: 'Kriss',
