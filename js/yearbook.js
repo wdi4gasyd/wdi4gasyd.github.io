@@ -160,20 +160,20 @@ yearBook.yearBookStudents = new yearBook.Students([
     name: 'Simon',
     slug: 'simon-taylor',
     photoURL: 'tba',
-    aboutMe: 'your bio',
+    aboutMe: 'I\'m a full stack web dev who loves both the intricacies of Javascript and the elegance of Ruby on Rails. I\'m also a nerd at heart who loves Video Games, Board Games and Roleplaying games.',
     portfolioImage1: 'tba',
     portfolioImage2: 'tba',
     portfolioImage3: 'tba',
-    portfolioURL1: 'tba',
-    portfolioURL2: 'tba',
-    portfolioURL3: 'tba',
-    portfolioBlurb1: 'tba',
-    portfolioBlurb2: 'tba',
-    portfolioBlurb3: 'tba',
-    github: 'https://github.com/thomasdane',
-    twitter: 'https://twitter.com/tomjdane',
-    linkedin: '',
-    email: ''
+    portfolioURL1: 'http://txt-adv.herokuapp.com/',
+    portfolioURL2: 'http://demochattic.herokuapp.com/',
+    portfolioURL3: 'http://review-mi.herokuapp.com/',
+    portfolioBlurb1: 'Text Adventure Builder lets you create and share your own custom text based adventure games. The complex adventure editor lets you easily build your own story and bring this to life with images. Those who enjoyed "Choose your own Adventure" books will find it instantly familiar',
+    portfolioBlurb2: 'Demochattic is a web based chat client with a difference. There are no channel/room admins and all decisions only proceed after a majority vote from the users. It\'s Democrattic!',
+    portfolioBlurb3: 'Review Mi is a content review site, allowing users to rate and review content that they have read / watched or listened to. Currently only Movie reviews have been implemented.',
+    github: 'https://github.com/nizmox',
+    twitter: 'https://twitter.com/SimonTaylorAU',
+    linkedin: 'http://www.linkedin.com/in/simontaylorau',
+    email: 'simon@93made.com'
   })
 
 
