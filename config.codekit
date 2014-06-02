@@ -2,6 +2,105 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "16921",
 "files": {
+	"\/assets\/talk-anne.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6775,
+		"inputAbbreviatedPath": "\/assets\/talk-anne.png",
+		"outputAbbreviatedPath": "\/assets\/talk-anne.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/talk-charlie.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4368,
+		"inputAbbreviatedPath": "\/assets\/talk-charlie.png",
+		"outputAbbreviatedPath": "\/assets\/talk-charlie.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/talk-erik.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6540,
+		"inputAbbreviatedPath": "\/assets\/talk-erik.png",
+		"outputAbbreviatedPath": "\/assets\/talk-erik.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/talk-kriss.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6488,
+		"inputAbbreviatedPath": "\/assets\/talk-kriss.png",
+		"outputAbbreviatedPath": "\/assets\/talk-kriss.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/talk-mark.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6229,
+		"inputAbbreviatedPath": "\/assets\/talk-mark.png",
+		"outputAbbreviatedPath": "\/assets\/talk-mark.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/talk-nix.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4190,
+		"inputAbbreviatedPath": "\/assets\/talk-nix.png",
+		"outputAbbreviatedPath": "\/assets\/talk-nix.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/talk-olly.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3693,
+		"inputAbbreviatedPath": "\/assets\/talk-olly.png",
+		"outputAbbreviatedPath": "\/assets\/talk-olly.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/talk-simon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3815,
+		"inputAbbreviatedPath": "\/assets\/talk-simon.png",
+		"outputAbbreviatedPath": "\/assets\/talk-simon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/talk-tom.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4178,
+		"inputAbbreviatedPath": "\/assets\/talk-tom.png",
+		"outputAbbreviatedPath": "\/assets\/talk-tom.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/css\/demo.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -47,6 +146,28 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/Anne.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12927,
+		"inputAbbreviatedPath": "\/img\/Anne.jpg",
+		"outputAbbreviatedPath": "\/img\/Anne.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/badhairdaypredictor.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.0403e+06,
+		"inputAbbreviatedPath": "\/img\/badhairdaypredictor.png",
+		"outputAbbreviatedPath": "\/img\/badhairdaypredictor.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/bg-tiled-02.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -91,6 +212,72 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/brbnimage.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 232951,
+		"inputAbbreviatedPath": "\/img\/brbnimage.jpg",
+		"outputAbbreviatedPath": "\/img\/brbnimage.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/butterflyeffect.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.00623e+06,
+		"inputAbbreviatedPath": "\/img\/butterflyeffect.png",
+		"outputAbbreviatedPath": "\/img\/butterflyeffect.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/charlie\/loople_homepage.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 114416,
+		"inputAbbreviatedPath": "\/img\/charlie\/loople_homepage.png",
+		"outputAbbreviatedPath": "\/img\/charlie\/loople_homepage.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/charlie\/readr.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.67082e+06,
+		"inputAbbreviatedPath": "\/img\/charlie\/readr.png",
+		"outputAbbreviatedPath": "\/img\/charlie\/readr.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/charlie\/spectrm.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 134328,
+		"inputAbbreviatedPath": "\/img\/charlie\/spectrm.png",
+		"outputAbbreviatedPath": "\/img\/charlie\/spectrm.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/coinhomimage.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 127472,
+		"inputAbbreviatedPath": "\/img\/coinhomimage.jpeg",
+		"outputAbbreviatedPath": "\/img\/coinhomimage.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/cross.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -109,6 +296,17 @@
 		"initialSize": 13215,
 		"inputAbbreviatedPath": "\/img\/Email-Icon.png",
 		"outputAbbreviatedPath": "\/img\/Email-Icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/Erik.JPG": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 61808,
+		"inputAbbreviatedPath": "\/img\/Erik.JPG",
+		"outputAbbreviatedPath": "\/img\/Erik.JPG",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -142,6 +340,94 @@
 		"initialSize": 12400,
 		"inputAbbreviatedPath": "\/img\/Linkedin-Icon.png",
 		"outputAbbreviatedPath": "\/img\/Linkedin-Icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/magneticpoetry.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 778919,
+		"inputAbbreviatedPath": "\/img\/magneticpoetry.png",
+		"outputAbbreviatedPath": "\/img\/magneticpoetry.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/Nix.JPG": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57870,
+		"inputAbbreviatedPath": "\/img\/Nix.JPG",
+		"outputAbbreviatedPath": "\/img\/Nix.JPG",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/nix\/Demochattic.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 184696,
+		"inputAbbreviatedPath": "\/img\/nix\/Demochattic.jpg",
+		"outputAbbreviatedPath": "\/img\/nix\/Demochattic.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/nix\/Effy.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.17685e+06,
+		"inputAbbreviatedPath": "\/img\/nix\/Effy.jpg",
+		"outputAbbreviatedPath": "\/img\/nix\/Effy.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/nix\/MarketPlac.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 534530,
+		"inputAbbreviatedPath": "\/img\/nix\/MarketPlac.jpg",
+		"outputAbbreviatedPath": "\/img\/nix\/MarketPlac.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/nix\/Nix.JPG": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57870,
+		"inputAbbreviatedPath": "\/img\/nix\/Nix.JPG",
+		"outputAbbreviatedPath": "\/img\/nix\/Nix.JPG",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/ollyd.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 88240,
+		"inputAbbreviatedPath": "\/img\/ollyd.jpg",
+		"outputAbbreviatedPath": "\/img\/ollyd.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/Tom.JPG": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 58137,
+		"inputAbbreviatedPath": "\/img\/Tom.JPG",
+		"outputAbbreviatedPath": "\/img\/Tom.JPG",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -385,6 +671,18 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/readme.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/readme.md",
+		"outputAbbreviatedPath": "\/readme.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [
