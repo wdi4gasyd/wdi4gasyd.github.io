@@ -8,7 +8,7 @@ yearBook.yearBookStudents = new yearBook.Students([
     name: 'Tom',
     slug: 'tom-dane',
     photoURL: 'Tom.jpg',
-    aboutMe: 'The bite of an irradiated javascript bug granted Tom Dane powers of coding. When a burglar killed his parent\'s laptop, Tom vowed to use those abilities to improve the web.',
+    aboutMe: 'The bite of an irradiated javascript bug granted Tom Dane the power of code. When a burglar killed his parent\'s laptop, Tom vowed to use those abilities to improve the web.',
     portfolioImage1: 'tba',
     portfolioImage2: 'tba',
     portfolioImage3: 'tba',
