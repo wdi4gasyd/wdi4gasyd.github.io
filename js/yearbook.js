@@ -103,7 +103,7 @@ yearBook.yearBookStudents = new yearBook.Students([
     name: 'Anne',
     slug: 'anne-homann',
     photoURL: 'img/Anne.jpg',
-    aboutMe: "When I'm not tuning in to watch Australia's number one award-winning drama 'Neighbours', you'll find me coding, reading code or reading about code. Or watching more Neighbours on YouTube"
+    aboutMe: "When I'm not tuning in to watch Australia's number one award-winning drama 'Neighbours', you'll find me coding, reading code or reading about code. Or watching more Neighbours on YouTube",
     portfolioImage1: '',
     portfolioImage2: '',
     portfolioImage3: '',
