@@ -2,7 +2,6 @@ var yearBook = yearBook || {};
 
 //seed objects for all students. Create one large object/var 
 
-
 yearBook.yearBookStudents = new yearBook.Students([
   new yearBook.Student({
     name: 'Tom',
@@ -176,9 +175,6 @@ yearBook.yearBookStudents = new yearBook.Students([
     email: 'simon@93made.com'
   })
 
-
-  // new yearBook.Student({id:1, title:'Tom', slug: 'tom-dane', content:'Tom content'}),
-
 ]);
 
 yearBook.router = new yearBook.AppRouter ();
@@ -190,8 +186,20 @@ $(document).ready(function(){
   Backbone.history.start();
 
   // we will need some dom elements, let's set variables here
-  
-
-
-
+  $('header').on('click', '.trigger-open', function(){
+    $('.trigger-open').html('close');
+    $('.trigger-open').addClass('trigger-close');
+    $('.trigger-open').removeClass('trigger-open');
+    $('.overlay').fadeIn(function (){
+      runGame();//game = new Phaser.Game(900, 600, Phaser.AUTO, 'phaser-canvas', { preload: preload, create: create, update: update });
+    });
+  });
+  $('header').on('click', '.trigger-close', function(){
+    $('.trigger-close').html('Enter the Wizard School');
+    $('.trigger-close').addClass('trigger-open');
+    $('.trigger-close').removeClass('trigger-close');
+    $('.overlay').fadeOut();
+    $('#phaser-canvas').remove();
+    $('.overlay').append('<div id="phaser-canvas"></div>');
+  })
 });
