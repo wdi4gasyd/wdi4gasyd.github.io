@@ -849,7 +849,7 @@ var runGame = function (){
         console.log("You win! Now how about offering us a job?");             
         style = { font: "65px Arial", fill: "#fff", align: "center" };
         game.add.text(game.camera.x+325, game.camera.y+150, "You Win!", style);
-        button = game.add.button(game.camera.x+275, game.camera.y+250, 'reset-button', actionOnResetClick, this); 
+        //button = game.add.button(game.camera.x+275, game.camera.y+250, 'reset-button', actionOnResetClick, this); 
         // The following lines kill the players movement before disabling keyboard inputs
         // player.body.velocity.x = 0;
         // setTimeout(game.input.keyboard.disabled = true, 1000); 
@@ -868,9 +868,9 @@ var runGame = function (){
        
         // When the Reset button is clicked, it calls this function, which in turn calls the game to be reloaded.
         // Here we display the contact and replay button options, calling either respective function
-        function actionOnResetClick () {
-            gameRestart();
-        }
+        // function actionOnResetClick () {
+        //     gameRestart();
+        // }
 
 
     } 
