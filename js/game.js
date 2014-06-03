@@ -790,7 +790,7 @@ var runGame = function (){
             winArray.push(npcName);
             console.log(npcName + " is not in the array");
         } else {
-            if (winArray.length === 11) {
+            if (winArray.length >= 10 ) {
                 win();
             }
         }
@@ -823,9 +823,21 @@ var runGame = function (){
         game.add.text(game.camera.x+325, game.camera.y+150, "You Win!", style);
         button = game.add.button(game.camera.x+275, game.camera.y+250, 'reset-button', actionOnResetClick, this); 
         // The following lines kill the players movement before disabling keyboard inputs
-        player.body.velocity.x = 0;
-        setTimeout(game.input.keyboard.disabled = true, 1000); 
-     
+        // player.body.velocity.x = 0;
+        // setTimeout(game.input.keyboard.disabled = true, 1000); 
+        explosion = game.add.sprite(player.body.x - 32, player.body.y - 32,  'explosion');
+        explosion.animations.add('run_explode', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], 10, true);
+        explosion.animations.play('run_explode');
+        // Removes the player from the screen
+        player.kill(); 
+        setTimeout(explodeKill, 1500);
+        function explodeKill () {
+            explosion.kill();
+        }
+        // setTimeout(gameOverText, 1500);
+        // setTimeout(gameRestart, 3000);
+        
+       
         // When the Reset button is clicked, it calls this function, which in turn calls the game to be reloaded.
         // Here we display the contact and replay button options, calling either respective function
         function actionOnResetClick () {
@@ -838,15 +850,11 @@ var runGame = function (){
         explosion = game.add.sprite(player.body.x - 32, player.body.y - 32,  'explosion');
         explosion.animations.add('run_explode', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], 10, true);
         explosion.animations.play('run_explode');
-        setTimeout(explode, 1500);
+        
         setTimeout(gameOverText, 1500);
         setTimeout(gameRestart, 3000);
-        // this.music.pause();
-        // explode_sound.play(''); 
-        function explode() {
-          explosion.kill();
+        
 
-        }
 
         // Show text to say you died, then reload the game.
         function gameOverText () {
