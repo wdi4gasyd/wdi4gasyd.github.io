@@ -546,7 +546,7 @@ var runGame = function (){
         // PLAYER MOVEMENT WITH MOUSE
         //--------------------------------------
 
-        if (game.input.mousePointer.isDown) {
+        if (game.input.activePointer.isDown) {
 
             console.log("click detected");
             //NEED TO THROTTLE THIS FUNCTION TO PREVENT TOO MANY READINGS
