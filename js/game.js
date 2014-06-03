@@ -623,7 +623,7 @@ var runGame = function (){
     
         // Samples an array of Erik's best comments
         erikStyle = { font: "20px Arial", fill: "#fff", align: "center" };
-        var erikisms = ["\"Erik speaks about things.\"", "\"Erik speaks again\"", "\"Eriks words of wisdom\""]
+        var erikisms = ["\"I'm Erik.\"", "\"Will today be a bad hair day?\"", "\"Thanks for stopping by.\""]
         var erikText = game.add.text(350, 950, _.sample(erikisms), erikStyle);
         // var joelText = game.add.text(300, 960, "\"Have the best time... seriously.\"", joelStyle);  //<< CAN THIS BE REMOVED?
         Erik.animations.play('talk');
