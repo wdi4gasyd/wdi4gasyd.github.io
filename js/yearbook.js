@@ -144,7 +144,7 @@ yearBook.yearBookStudents = new yearBook.Students([
     portfolioImage1: 'tba',
     portfolioImage2: 'tba',
     portfolioImage3: 'tba',
-    portfolioURL1: 'http://justlike.herokuapp.com/',
+    portfolioURL1: 'tba',
     portfolioURL2: 'http://demochattic.herokuapp.com/',
     portfolioURL3: 'http://airtribuo.herokuapp.com/',
     portfolioBlurb1: 'Justlike is a web based recipe search and database to allow you to access, share and update your family heirloom recipes in one place',
