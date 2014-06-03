@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>WDI4 Yearbook</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" >
+  <link rel="stylesheet" href="css/sprite.css" >
+  
+</head>
+<body>
+  <div id="main">
+    
+    <header>
+        <button id="trigger-overlay" class="trigger trigger-open" type="button">Enter the Wizard School</button>
+        <div class="torch" id="torch-left"><img src="img/flame-fucking.gif" alt="flaming torches batman!"></div>
+        <div class="torch" id="torch-right"><img src="img/flame-fucking.gif" alt="flaming torches batman!"></div>          
+    </header>
+
+    <div id="content">
+      <h1>WDI SYD FEB 14</h1>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+      <p>qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+    </div>
+  </div>
+
+  <!-- open/close -->
+  <div class="overlay">
+    <div id="phaser-canvas"></div>
+  </div>
+
+<!--View displays all students. Links to urls containing our names from the slug.--> 
+<script id="appView" type="text/x-underscore-template">
+</script>
+
+<script id="studentListView" type="text/x-underscore-template">
+  <div class="viewer">
+    <img  class="home_sprite" src="assets/<%= slug %>-sprite.png">
+  </div>  
+</script>
+
+<script id="studentView" type="text/x-underscore-template">
+  <div class="student <%= name %>">
+    <h1 class="name"><%= name %></h1>
+    <div id="details-main">
+      <div class="column bio"><%= aboutMe %></div>
+      <div class="column photo">headshot</div>
+      <div class="column contact">
+        <a target="_blank" title="<%= name %> on LinkedIn" href="<%= linkedin %>"><img class="social-icon" src="img/Linkedin-Icon.png"/></a>
+        <a target="_blank" title="<%= name %> on Twitter" href="<%= twitter %>"><img class="social-icon" src="img/Twitter-Icon.png"/></a>
+        <a target="_blank" title="<%= name %> on Github" href="<%= github %>"><img class="social-icon" src="img/Github-Icon.png"/></a>
+        <a title="Email <%= name %>" href="mailto:<%= email %>"><img class="social-icon" src="img/Email-Icon.png"/></a>
+      </div>
+    </div>
+    <div id="details-projects">
+      <div class="column project-01"><a href="<%= portfolioURL1 %>" target="_blank" title="<%= name %> project 1"><img src="<%= portfolioImage1 %>"><span><%= portfolioBlurb1 %></span></a></div>
+      <div class="column project-02"><a href="<%= portfolioURL2 %>" target="_blank" title="<%= name %> project 2"><img src="<%= portfolioImage2 %>"><span><%= portfolioBlurb2 %></span></a></div>
+      <div class="column project-03"><a href="<%= portfolioURL3 %>" target="_blank" title="<%= name %> project 3"><img src="<%= portfolioImage3 %>"><span><%= portfolioBlurb3 %></span></a></div>
+    </div>
+  </div>
+</script>
+
+<script src="js/lib/jquery.js"></script>
+<script src="js/lib/underscore-min.js"></script>
+<script src="js/lib/backbone.js"></script>
+<script src="js/lib/phaser.min.js"></script>
+
+<script src="js/models/student.js"></script>
+<script src="js/collections/students.js"></script>
+<script src="js/views/appView.js"></script>
+<script src="js/views/studentListView.js"></script>
+<script src="js/views/studentView.js"></script>
+<script src="js/router/router.js"></script>
+
+<script src="js/yearbook.js"></script>
+<script src="js/game.js"></script>
+<!-- <script src="js/lib/classie.js"></script>
+<script src="js/lib/grid_effect.js"></script>
+<script src="js/lib/snap.svg-min.js"></script> -->
+<script src="js/lib/modernizr.custom.js"></script>
+
+
+</body>
+</html>

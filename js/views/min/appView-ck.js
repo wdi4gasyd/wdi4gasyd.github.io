@@ -1,0 +1,1 @@
+var yearBook=yearBook||{};yearBook.AppView=Backbone.View.extend({el:"header",initialize:function(){this.template=_.template($("#appView").html())},render:function(){this.$el.append(this.template()),this.collection.each(function(e){var t=new yearBook.StudentListView({model:e});t.render(),$("header").append(t.el)})}});
