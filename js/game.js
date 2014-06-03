@@ -75,7 +75,7 @@ var runGame = function (){
     var score = 0;
     var scoreText;
     //here we store the names of each NPC as the player speaks to them
-    var winArray = [];
+    winArray = [];
 
     function create() {
 
@@ -786,6 +786,16 @@ var runGame = function (){
      // Here we check if the user has collected all the collectables when they enter the door
      function winChecker (npcName) {
         console.log("inside winchecker" + npcName);
+        if (($.inArray(npcName, winArray) === -1)) {
+            winArray.push(npcName);
+            console.log(npcName + " is not in the array");
+        } else {
+            if (winArray.length === 11) {
+                console.log("This player wins");
+                win();
+            }
+        }
+        
         // if (score > 6) { 
         //     win();
         //     this.music.pause();
@@ -808,28 +818,29 @@ var runGame = function (){
      }
 
     // Win function: f the right score is reached then pause music, remove player from screen and call win function 
-    function win () {                
-        style = { font: "65px Arial", fill: "#fff", align: "center" };
-        game.add.text(game.camera.x+325, game.camera.y+150, "You Win!", style);
-        button = game.add.button(game.camera.x+275, game.camera.y+250, 'reset-button', actionOnResetClick, this);
-        button = game.add.button(game.camera.x+475, game.camera.y+250, 'contact-button', actionOnContactClick, this);  
-        // The following lines kill the players movement before disabling keyboard inputs
-        player.body.velocity.x = 0;
-        setTimeout(game.input.keyboard.disabled = true, 1000); 
-        // Plays the victory song    
-        victory.play('');
-        // When the Reset button is clicked, it calls this function, which in turn calls the game to be reloaded.
-        // Here we display the contact and replay button options, calling either respective function
-        function actionOnResetClick () {
-            gameRestart();
-        }
+    function win () {   
+        console.log("inside win function");             
+        // style = { font: "65px Arial", fill: "#fff", align: "center" };
+        // game.add.text(game.camera.x+325, game.camera.y+150, "You Win!", style);
+        // button = game.add.button(game.camera.x+275, game.camera.y+250, 'reset-button', actionOnResetClick, this);
+        // button = game.add.button(game.camera.x+475, game.camera.y+250, 'contact-button', actionOnContactClick, this);  
+        // // The following lines kill the players movement before disabling keyboard inputs
+        // player.body.velocity.x = 0;
+        // setTimeout(game.input.keyboard.disabled = true, 1000); 
+        // // Plays the victory song    
+        // victory.play('');
+        // // When the Reset button is clicked, it calls this function, which in turn calls the game to be reloaded.
+        // // Here we display the contact and replay button options, calling either respective function
+        // function actionOnResetClick () {
+        //     gameRestart();
+        // }
 
-        // When the contact button is clicked it redirects through to contact form
-        function actionOnContactClick () {
+        // // When the contact button is clicked it redirects through to contact form
+        // function actionOnContactClick () {
 
-            window.location = ("/contacts/" + lastName);
+        //     window.location = ("/contacts/" + lastName);
             
-        } 
+        // } 
     } 
 
     function killPlayer (player, enemy) {
