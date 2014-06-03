@@ -28,6 +28,14 @@ ul, li{
 p{
   margin: .2em 0 1.8em 0;
 }
+a{
+  color: #99cc33;
+  text-decoration: none;
+  outline: none;
+}
+a:hover, a:focus {
+  color: #373e18;
+}
 
 
 
@@ -78,6 +86,7 @@ header{
   display: inline-block;
   width: 30%;
   margin: 5px 2%;
+  vertical-align: top;
   /*background: #F60;*/
 }
 .student .column:first-child{
@@ -87,131 +96,53 @@ header{
   margin-right: 0;
 }
 
-
-
 /* display the student names on one line - later these will be the sprites */
 #students li {
   display:inline;
 }
-
 .social-icon {
   width: 90px;
 }
 
-/* flame effect */
-.testanimation{
-  -webkit-transition-duration: 5000ms;
-  -webkit-transition-property: -webkit-transform;
-  -webkit-transform: translate(-320px, 0px);
-  animation: newanimation 1s;
+/* the portfolio items with rollover */
+#details-projects .column{
+  /* width 265 */
+  height: 198px;
+  position: relative;
+  overflow: hidden;
+  background: #FFF;
 }
-keyframes testanimation{
-  0% {color: red;}
-  50% {color: blue;}
-  100& {color: green;}
+#details-projects a span{
+  /* width 265 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  padding: 5px;
 }
-
-
-
-.fire{
-  -webkit-animation: FLAMES 1s infinite;
-  -moz-animation: FLAMES 1s infinite;
-  -o-animation: FLAMES 1s infinite;
-  animation: FLAMES 1s infinite;
+#details-projects a img{
+  width: 265px;
+  height: 198px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: all 1s ease;
 }
-
-.burn {
-  animation: FLAMES .65s infinite alternate;
-  -moz-animation: FLAMES .65s infinite alternate;
-  -webkit-animation: FLAMES .65s infinite alternate;
-  -o-animation: FLAMES .65s infinite alternate;
-}
-
-@keyframes FLAMES{
-  0% {background: red;}
-  100% {background: blue;}
-}
-/*0% {box-shadow: 0 0 20px #fefcc9,
-  10px -10px 30px #feec85,
-  -20px -20px 40px #ffae34,
-  20px -40px 50px #ec760c,
-  -20px -60px 60px #cd4606,
-  0 -80px 70px #973716,
-  10px -90px 80px #451b0e;}
-100% {box-shadow: 0 0 20px #fefcc9,
-  10px -10px 30px #fefcc9,
-  -20px -20px 40px #feec85,
-  22px -42px 60px #ffae34,
-  -22px -58px 50px #ec760c,
-  0 -82px 80px #cd4606,
-  10px -90px 80px  #973716;}
+#details-projects a img:hover{
+  padding-top: 100%;
 }
 
-@-moz-keyframes animation{
-0% {box-shadow: 0 0 20px #fefcc9,
-  10px -10px 30px #feec85,
-  -20px -20px 40px #ffae34,
-  20px -40px 50px #ec760c,
-  -20px -60px 60px #cd4606,
-  0 -80px 70px #973716,
-  10px -90px 80px #451b0e;}
-100% {box-shadow: 0 0 20px #fefcc9,
-  10px -10px 30px #fefcc9,
-  -20px -20px 40px #feec85,
-  22px -42px 60px #ffae34,
-  -22px -58px 50px #ec760c,
-  0 -82px 80px #cd4606,
-  10px -90px 80px  #973716;}
-}
-
-@-webkit-keyframes animation
-{
-0% {box-shadow: 0 0 20px #fefcc9,
-  10px -10px 30px #feec85,
-  -20px -20px 40px #ffae34,
-  20px -40px 50px #ec760c,
-  -20px -60px 60px #cd4606,
-  0 -80px 70px #973716,
-  10px -90px 80px #451b0e;}
-100% {box-shadow: 0 0 20px #fefcc9,
-  10px -10px 30px #fefcc9,
-  -20px -20px 40px #feec85,
-  22px -42px 60px #ffae34,
-  -22px -58px 50px #ec760c,
-  0 -82px 80px #cd4606,
-  10px -90px 80px  #973716;}
-}
-
-@-o-keyframes animation
-{
-0% {box-shadow: 0 0 20px #fefcc9,
-  10px -10px 30px #feec85,
-  -20px -20px 40px #ffae34,
-  20px -40px 50px #ec760c,
-  -20px -60px 60px #cd4606,
-  0 -80px 70px #973716,
-  10px -90px 80px #451b0e;}
-100% {box-shadow: 0 0 20px #fefcc9,
-  10px -10px 30px #fefcc9,
-  -20px -20px 40px #feec85,
-  22px -42px 60px #ffae34,
-  -22px -58px 50px #ec760c,
-  0 -82px 80px #cd4606,
-  10px -90px 80px  #973716;}
-}*/
 
 
 
 
-a {
-  color: #99cc33;
-  text-decoration: none;
-  outline: none;
-}
 
-a:hover, a:focus {
-  color: #373e18;
-}
+
+
+
+
+
 
 div button {
   display: inline-block;

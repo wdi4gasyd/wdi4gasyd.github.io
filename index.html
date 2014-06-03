@@ -87,33 +87,20 @@
   <div class="student <%= name %>">
     <h1 class="name"><%= name %></h1>
     <div id="details-main">
-      <div class="column photo">headshot</div>
       <div class="column bio"><%= aboutMe %></div>
+      <div class="column photo">headshot</div>
       <div class="column contact">
-        <a href="http://www.linkedin.com/"><img class="social-icon" src="img/Linkedin-Icon.png"/></a>
-        <a href="http://www.twitter.com/"><img class="social-icon" src="img/Twitter-Icon.png"/></a>
-        <a href="http://www.github.com/"><img class="social-icon" src="img/Github-Icon.png"/></a>
-        <a href="#"><img class="social-icon" src="img/Email-Icon.png"/></a>
+        <a target="_blank" title="<%= name %> on LinkedIn" href="<%= linkedin %>"><img class="social-icon" src="img/Linkedin-Icon.png"/></a>
+        <a target="_blank" title="<%= name %> on Twitter" href="<%= twitter %>"><img class="social-icon" src="img/Twitter-Icon.png"/></a>
+        <a target="_blank" title="<%= name %> on Github" href="<%= github %>"><img class="social-icon" src="img/Github-Icon.png"/></a>
+        <a title="Email <%= name %>" href="mailto:<%= email %>"><img class="social-icon" src="img/Email-Icon.png"/></a>
       </div>
     </div>
     <div id="details-projects">
-      <div class="column project-01">project 1 image with a nice rollover to display the details underneath</div>
-      <div class="column project-02">project 2 image with a nice rollover to display the details underneath</div>
-      <div class="column project-03">project 3 image with a nice rollover to display the details underneath</div>
+      <div class="column project-01"><a href="<%= portfolioURL1 %>" target="_blank" title="<%= name %> project 1"><img src="<%= portfolioImage1 %>"><span><%= portfolioBlurb1 %></span></a></div>
+      <div class="column project-02"><a href="<%= portfolioURL2 %>" target="_blank" title="<%= name %> project 2"><img src="<%= portfolioImage2 %>"><span><%= portfolioBlurb2 %></span></a></div>
+      <div class="column project-03"><a href="<%= portfolioURL3 %>" target="_blank" title="<%= name %> project 3"><img src="<%= portfolioImage3 %>"><span><%= portfolioBlurb3 %></span></a></div>
     </div>
-
-    <section class="related">
-      <p>All Projects</p>
-      <a href="#">
-        <img src="http://goo.gl/x6qPmJ" />
-        <h3>Project One - Description</h3>
-      </a>
-
-      <a href="#">
-        <img src="http://goo.gl/x6qPmJ" />
-        <h3>Project Two - Description</h3>
-      </a>
-    </section>
   </div>
 </script>
 
