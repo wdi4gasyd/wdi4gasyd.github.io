@@ -74,6 +74,8 @@ var runGame = function (){
     //here we set two more vars
     var score = 0;
     var scoreText;
+    //here we store the names of each NPC as the player speaks to them
+    var winArray = [];
 
     function create() {
 
@@ -607,6 +609,7 @@ var runGame = function (){
         function removeText () {
             game.world.remove(joelText);   
         }
+        winChecker(Joel.key);
     }
 
     function erikSpeak (player, Erik) {
@@ -625,6 +628,8 @@ var runGame = function (){
             Erik.animations.stop();
             Erik.frame = 0;   
         }
+        winChecker(Erik.key);
+
     }
 
     function markSpeak (player, Mark) {
@@ -640,6 +645,7 @@ var runGame = function (){
         function removeText () {
             game.world.remove(markText);   
         }
+        winChecker(Mark.key);
     }
 
     function simonSpeak (player, Simon) {
@@ -655,6 +661,7 @@ var runGame = function (){
         function removeText () {
             game.world.remove(simonText);   
         }
+        winChecker(Simon.key);
     }
 
      function nixSpeak (player, Nix) {
@@ -670,6 +677,7 @@ var runGame = function (){
         function removeText () {
             game.world.remove(nixText);   
         }
+        winChecker(Nix.key);
     }
 
     function anneSpeak (player, Anne) {
@@ -685,6 +693,7 @@ var runGame = function (){
         function removeText () {
             game.world.remove(anneText);   
         }
+        winChecker(Anne.key);
     }
 
     function charlieSpeak (player, Charlie) {
@@ -700,6 +709,7 @@ var runGame = function (){
         function removeText () {
             game.world.remove(charlieText);   
         }
+        winChecker(Charlie.key);
     }
 
     function krissSpeak (player, Kriss) {
@@ -715,6 +725,7 @@ var runGame = function (){
         function removeText () {
             game.world.remove(krissText);   
         }
+        winChecker(Kriss.key);
     }
 
     function ollySpeak (player, Olly) {
@@ -730,6 +741,7 @@ var runGame = function (){
         function removeText () {
             game.world.remove(ollyText);   
         }
+        winChecker(Olly.key);
     }
 
     function tomSpeak (player, Tom) {
@@ -745,6 +757,7 @@ var runGame = function (){
         function removeText () {
             game.world.remove(tomText);   
         }
+        winChecker(Tom.key);
     }
 
     function mathildaSpeak (player, Mathilda) {
@@ -760,6 +773,7 @@ var runGame = function (){
         function removeText () {
             game.world.remove(mathildaText);   
         }
+        winChecker(Mathilda.key);
     }
 
 // <<===========================================================================================================>> 
@@ -770,26 +784,27 @@ var runGame = function (){
 
 
      // Here we check if the user has collected all the collectables when they enter the door
-     function winChecker () {
-        if (score > 6) { 
-            win();
-            this.music.pause();
-            player.kill();
-        } 
-        // Displays how many butterflies are still left to catch
-        else {
-            wincheck_style = { font: "50px Arial", fill: "#fff", align: "center" };
-            butterfliesText = game.add.text(3950, 620, "You've collected \n" + score + " butterflies.\n\n You have " + (7 - score) + "\n more to catch.", wincheck_style);
-            // Audio effect
-            notice.play('');
-            // Call removeText function after a couple seconds
-            setTimeout(removeText, 1500);
+     function winChecker (npcName) {
+        console.log("inside winchecker" + npcName);
+        // if (score > 6) { 
+        //     win();
+        //     this.music.pause();
+        //     player.kill();
+        // } 
+        // // Displays how many butterflies are still left to catch
+        // else {
+        //     wincheck_style = { font: "50px Arial", fill: "#fff", align: "center" };
+        //     butterfliesText = game.add.text(3950, 620, "You've collected \n" + score + " butterflies.\n\n You have " + (7 - score) + "\n more to catch.", wincheck_style);
+        //     // Audio effect
+        //     notice.play('');
+        //     // Call removeText function after a couple seconds
+        //     setTimeout(removeText, 1500);
 
-            function removeText () {
-                game.world.remove(butterfliesText);   
-            }
+        //     function removeText () {
+        //         game.world.remove(butterfliesText);   
+        //     }
             
-        }
+        // }
      }
 
     // Win function: f the right score is reached then pause music, remove player from screen and call win function 
