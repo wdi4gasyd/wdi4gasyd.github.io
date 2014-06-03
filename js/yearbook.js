@@ -151,10 +151,10 @@ yearBook.yearBookStudents = new yearBook.Students([
     portfolioBlurb1: 'tba',
     portfolioBlurb2: 'tba',
     portfolioBlurb3: 'tba',
-    github: 'https://github.com/thomasdane',
-    twitter: 'https://twitter.com/tomjdane',
-    linkedin: '',
-    email: ''
+    github: 'https://github.com/markpereira',
+    twitter: 'https://twitter.com/parkmereira',
+    linkedin: 'http://www.linkedin.com/in/gmpereira',
+    email: 'mark.pereira@xtra.co.nz'
   }),
   new yearBook.Student({
     name: 'Simon',
