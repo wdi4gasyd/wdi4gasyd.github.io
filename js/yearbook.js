@@ -131,6 +131,7 @@ yearBook.yearBookStudents = new yearBook.Students([
     portfolioBlurb1: 'This is a light-hearted web application that uses a weather API and user input to predict the likelihood of a bad hair day. The custom algorithm was coded in Ruby.',
     portfolioBlurb2: 'Butterfly Effect is a small HTML5 game built with Olly Dutton and Tom Dane. It uses the Phaser game framework, JavaScript, jQuery, Underscore, HTML5 and CSS. Game events trigger changes in the DOM to alter elements outside of the game canvas.',
     portfolioBlurb3: 'Magnetic Poetry is a single-page word game built using Rails, AJAX, jQuery UI, jQuery Rotate, Underscore, and a few other bits and bobs. It has a simple drag-and-drop interface.',
+
     github: 'https://github.com/froesecom',
     twitter: 'https://twitter.com/eafroese',
     linkedin: 'http://www.linkedin.com/pub/erik-froese/33/878/829',

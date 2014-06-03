@@ -41,6 +41,7 @@ var runGame = function (){
 
         //NPC Sprits
         wizGame.phaser.load.spritesheet('Joel', wizGame.imgPath + 'butterfly2.png', 70, 65); //Joel's NPC Sprite
+
         wizGame.phaser.load.spritesheet('Erik', wizGame.imgPath + 'eriksprite.png', 32, 58); // Erik's NPC Sprite
         wizGame.phaser.load.spritesheet('Mark', wizGame.imgPath + 'butterfly.png', 80, 80); // Mark's NPC Sprite
         wizGame.phaser.load.spritesheet('Simon', wizGame.imgPath + 'butterfly.png', 80, 80); // Simon's NPC Sprite
@@ -74,8 +75,10 @@ var runGame = function (){
     //here we set two more vars
     var score = 0;
     var scoreText;
+
     //here we store the names of each NPC as the player speaks to them
     winArray = [];
+
 
     function create() {
 
@@ -114,7 +117,7 @@ var runGame = function (){
         
         game.camera.follow(player);
             
-        
+
 
 // <<===========================================================================================================>> 
                         //Create Invisible Walls
@@ -138,6 +141,7 @@ var runGame = function (){
         createInvisWall(386,1183,30,87);
         createInvisWall(1,1377,413,24);
         createInvisWall(385,1314,31,80);
+
 
         //MIDDLE LEFT ROOM
         createInvisWall(1,1139,368,28);
@@ -212,6 +216,7 @@ var runGame = function (){
         Joel.body.immovable = true;
         Joel.animations.add('flutter', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 10, true);
         Joel.animations.play('flutter');
+
 
         // Erik =====
         Erik = game.add.sprite(250, 950, 'Erik');
@@ -609,7 +614,9 @@ var runGame = function (){
         function removeText () {
             game.world.remove(joelText);   
         }
+
         winChecker(Joel.key);
+
     }
 
     function erikSpeak (player, Erik) {
@@ -628,7 +635,9 @@ var runGame = function (){
             Erik.animations.stop();
             Erik.frame = 0;   
         }
+
         winChecker(Erik.key);
+
 
     }
 
@@ -645,7 +654,9 @@ var runGame = function (){
         function removeText () {
             game.world.remove(markText);   
         }
+
         winChecker(Mark.key);
+
     }
 
     function simonSpeak (player, Simon) {
@@ -661,7 +672,9 @@ var runGame = function (){
         function removeText () {
             game.world.remove(simonText);   
         }
+
         winChecker(Simon.key);
+
     }
 
      function nixSpeak (player, Nix) {
@@ -677,7 +690,9 @@ var runGame = function (){
         function removeText () {
             game.world.remove(nixText);   
         }
+
         winChecker(Nix.key);
+
     }
 
     function anneSpeak (player, Anne) {
@@ -693,7 +708,9 @@ var runGame = function (){
         function removeText () {
             game.world.remove(anneText);   
         }
+
         winChecker(Anne.key);
+
     }
 
     function charlieSpeak (player, Charlie) {
@@ -709,7 +726,9 @@ var runGame = function (){
         function removeText () {
             game.world.remove(charlieText);   
         }
+
         winChecker(Charlie.key);
+
     }
 
     function krissSpeak (player, Kriss) {
@@ -725,7 +744,9 @@ var runGame = function (){
         function removeText () {
             game.world.remove(krissText);   
         }
+
         winChecker(Kriss.key);
+
     }
 
     function ollySpeak (player, Olly) {
@@ -741,7 +762,9 @@ var runGame = function (){
         function removeText () {
             game.world.remove(ollyText);   
         }
+
         winChecker(Olly.key);
+
     }
 
     function tomSpeak (player, Tom) {
@@ -757,7 +780,9 @@ var runGame = function (){
         function removeText () {
             game.world.remove(tomText);   
         }
+
         winChecker(Tom.key);
+
     }
 
     function mathildaSpeak (player, Mathilda) {
@@ -773,13 +798,16 @@ var runGame = function (){
         function removeText () {
             game.world.remove(mathildaText);   
         }
+
         winChecker(Mathilda.key);
+
     }
 
 // <<===========================================================================================================>> 
 
                         //WDI students add comments to the array they want their NPC to speak - END
 // <<===========================================================================================================>>
+
 
 
 
@@ -841,6 +869,7 @@ var runGame = function (){
         //     window.location = ("/contacts/" + lastName);
             
         // } 
+
     } 
 
     function killPlayer (player, enemy) {
