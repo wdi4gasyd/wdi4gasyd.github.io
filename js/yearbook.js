@@ -128,7 +128,7 @@ yearBook.yearBookStudents = new yearBook.Students([
     portfolioURL1: 'http://bad-hair-day-predictor.herokuapp.com/',
     portfolioURL2: 'http://butterflyeffect.herokuapp.com/',
     portfolioURL3: 'http://magneticpoetry.herokuapp.com/',
-    portfolioBlurb1: 'This is a light-hearted web application that uses a weather API and user input to predict the likelihood of a bad hair day. The custom algorithm was coded in Ruby. Users create profiles to save custom hairstyles and receive more specific predictions.',
+    portfolioBlurb1: 'This is a light-hearted web application that uses a weather API and user input to predict the likelihood of a bad hair day. The custom algorithm was coded in Ruby.',
     portfolioBlurb2: 'Butterfly Effect is a small HTML5 game built with Olly Dutton and Tom Dane. It uses the Phaser game framework, JavaScript, jQuery, Underscore, HTML5 and CSS. Game events trigger changes in the DOM to alter elements outside of the game canvas, updating resume information in a sidebar as the game is played.',
     portfolioBlurb3: 'Magnetic Poetry is a single-page word game built using Rails, AJAX, jQuery UI, jQuery Rotate, Underscore, and a few other bits and bobs. It has a simple drag-and-drop interface, and user actions implicitly (rather than explicitly) dictate what is read/written/destroyed in the database.',
     github: 'https://github.com/froesecom',
