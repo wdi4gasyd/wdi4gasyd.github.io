@@ -38,7 +38,6 @@ var runGame = function (){
         wizGame.phaser.load.image('contact-button', wizGame.imgPath + 'contact-button.png');
         wizGame.phaser.load.spritesheet('baddie', wizGame.imgPath + 'baddie.png', 32, 32);
         wizGame.phaser.load.spritesheet('explosion', wizGame.imgPath + 'explode.png', 128, 128);
-        wizGame.phaser.load.spritesheet('butterfly', wizGame.imgPath + 'butterfly2.png', 70, 65);
 
         //NPC Sprits
         wizGame.phaser.load.spritesheet('Joel', wizGame.imgPath + 'butterfly2.png', 70, 65); //Joel's NPC Sprite
@@ -59,7 +58,6 @@ var runGame = function (){
     var player;
     var cursors;
     var button;
-    var butterflies;
     var enemies;
     var Joel;
     var Erik;
@@ -114,33 +112,7 @@ var runGame = function (){
         
         game.camera.follow(player);
             
-        // Butterflies create
-        // The object below contains the butterfly coordinates
         
-        var butterfly_coords = {
-            250: 650,
-            2800: 350,
-            800: 950,
-            4300: 700,
-            1900: 1000,
-            2105: 90,
-            4000: 200
-        }
-        butterflies = game.add.group();
-        butterflies.enableBody = true;
-        
-        // The bIdCounter allows us to give the butterflies a unique id as they're created so we can use them to manipulate the DOM as they're collected.
-        // Now we can updated the sidebar CSS as they're collected.
-        var bIdCounter = 0;
-        
-        // This loop creates the butterflies
-        for (var key in butterfly_coords) {
-            var butterfly = butterflies.create( parseInt(key), butterfly_coords[key], 'butterfly');
-            butterfly.id = "resumeItem" + bIdCounter;
-            bIdCounter += 1;  
-        }
-        butterflies.callAll('animations.add', 'animations', 'fly', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 10, true)
-        butterflies.callAll('animations.play', 'animations', 'fly');
 
 // <<===========================================================================================================>> 
                         //Create Invisible Walls
@@ -163,7 +135,7 @@ var runGame = function (){
         createInvisWall(1,1182,416,12);
         createInvisWall(386,1183,30,87);
         createInvisWall(1,1377,413,24);
-        createInvisWall(385,1314,31,86);
+        createInvisWall(385,1314,31,80);
 
         //MIDDLE LEFT ROOM
         createInvisWall(1,1139,368,28);
@@ -236,9 +208,6 @@ var runGame = function (){
         game.physics.arcade.enable(Joel);
         Joel.enableBody = true;
         Joel.body.immovable = true;
-        //butterflies.callAll('animations.add', 'animations', 'fly', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 10, true)
-        // Full opacity so it's invisible // << DO WE NEED TO REMOVE THIS?
-        // butterflyJoel.alpha = 0.01; // << DO WE NEED TO REMOVE THIS?
         Joel.animations.add('flutter', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 10, true);
         Joel.animations.play('flutter');
 
@@ -445,16 +414,10 @@ var runGame = function (){
         // enable wall collisions
         game.physics.arcade.collide(wizGame.player, wizGame.invisWalls);
 
-        //  Collide the player and butterflies with the platforms
-        // game.physics.arcade.collide(player, platforms);
-        // game.physics.arcade.collide(butterflies, platforms);
 
         // // ENEMY ADDED HERE====================
         // game.physics.arcade.collide(enemies, platforms);
         // game.physics.arcade.collide(baddies, platforms);
-
-        //  Checks to see if the player overlaps with any of the butterflies, if he does call the collectStar function
-        game.physics.arcade.overlap(player, butterflies, collectButterfly, null, this);
 
 // <<===========================================================================================================>> 
 
@@ -805,28 +768,6 @@ var runGame = function (){
 // <<===========================================================================================================>>
 
 
-    function collectButterfly (player, butterfly) {
-        
-        // Removes the butterfy from the screen
-        butterfly.kill();
-        powerup = game.add.sprite(player.body.x -32, player.body.y, 'powerup');
-        powerup.animations.add('collect', [0, 1, 2, 3, 4, 5], 50, true);
-        powerup.animations.play('collect');
-        setTimeout(powerup_collect, 300);
-
-        function powerup_collect() {
-          powerup.kill();  
-        }
-        
-        
-        // updates the score so we can check in the winChecker function if player has collected all the stars.
-        score += 1;
-        game.world.remove(scoreText);
-        score_style = { font: "20px Arial", fill: "#fff", align: "center" };
-        scoreText = game.add.text(20, 20, "No. Butterflies: " + score, score_style);
-        scoreText.fixedToCamera = true;
-
-    }
 
      // Here we check if the user has collected all the collectables when they enter the door
      function winChecker () {
