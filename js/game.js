@@ -41,7 +41,7 @@ var runGame = function (){
         wizGame.phaser.load.spritesheet('butterfly', wizGame.imgPath + 'butterfly2.png', 70, 65);
 
         //NPC Sprits
-        wizGame.phaser.load.spritesheet('Joel', wizGame.imgPath + 'butterfly.png', 80, 80); //Joel's NPC Sprite
+        wizGame.phaser.load.spritesheet('Joel', wizGame.imgPath + 'butterfly2.png', 70, 65); //Joel's NPC Sprite
         wizGame.phaser.load.spritesheet('Erik', wizGame.imgPath + 'eriksprite.png', 32, 58); // Erik's NPC Sprite
         wizGame.phaser.load.spritesheet('Mark', wizGame.imgPath + 'butterfly.png', 80, 80); // Mark's NPC Sprite
         wizGame.phaser.load.spritesheet('Simon', wizGame.imgPath + 'butterfly.png', 80, 80); // Simon's NPC Sprite
@@ -236,10 +236,11 @@ var runGame = function (){
         game.physics.arcade.enable(Joel);
         Joel.enableBody = true;
         Joel.body.immovable = true;
+        //butterflies.callAll('animations.add', 'animations', 'fly', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 10, true)
         // Full opacity so it's invisible // << DO WE NEED TO REMOVE THIS?
         // butterflyJoel.alpha = 0.01; // << DO WE NEED TO REMOVE THIS?
-        // butterflyJoel.animations.add('flutter', [0, 1, 2, 3], 10, true);
-        // butterflyJoel.animations.play('flutter');
+        Joel.animations.add('flutter', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 10, true);
+        Joel.animations.play('flutter');
 
         // Erik =====
         Erik = game.add.sprite(250, 950, 'Erik');
