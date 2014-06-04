@@ -851,7 +851,7 @@ var runGame = function (){
             winArray.push(npcName);
             console.log(npcName + " is not in the array");
         } else {
-            if (winArray.length >= 10 ) {
+            if (winArray.length >= 11 ) {
                 win();
             }
         }
