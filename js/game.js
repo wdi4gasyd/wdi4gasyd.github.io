@@ -32,8 +32,7 @@ var runGame = function (){
       //here we load all of the assets we need
         
         wizGame.phaser.load.image('background', wizGame.imgPath + 'background-V2.jpg');
-        wizGame.phaser.load.spritesheet('player', wizGame.imgPath + 'player' + playerNum + '.png', 32, 32);
-        wizGame.phaser.load.spritesheet('powerup', wizGame.imgPath + 'powerup.png', 80, 74);   
+        wizGame.phaser.load.spritesheet('player', wizGame.imgPath + 'player' + playerNum + '.png', 32, 32); 
         wizGame.phaser.load.image('reset-button', wizGame.imgPath + 'reset-button.png');
         wizGame.phaser.load.image('contact-button', wizGame.imgPath + 'contact-button.png');
         wizGame.phaser.load.spritesheet('baddie', wizGame.imgPath + 'baddie.png', 32, 32);
@@ -41,7 +40,6 @@ var runGame = function (){
 
         //NPC Sprits
         wizGame.phaser.load.spritesheet('Joel', wizGame.imgPath + 'butterfly2.png', 70, 65); //Joel's NPC Sprite
-
         wizGame.phaser.load.spritesheet('Erik', wizGame.imgPath + 'talk-erik.png', 32, 56); // Erik's NPC Sprite
         wizGame.phaser.load.spritesheet('Mark', wizGame.imgPath + 'talk-mark.png', 32, 56); // Mark's NPC Sprite
         wizGame.phaser.load.spritesheet('Simon', wizGame.imgPath + 'talk-simon.png', 32, 56); // Simon's NPC Sprite
@@ -52,7 +50,6 @@ var runGame = function (){
         wizGame.phaser.load.spritesheet('Olly', wizGame.imgPath + 'talk-olly.png', 32, 56); // Olly's NPC Sprite
         wizGame.phaser.load.spritesheet('Tom', wizGame.imgPath + 'talk-tom.png', 32, 56); // Tom's NPC Sprite
         wizGame.phaser.load.spritesheet('Mathilda', wizGame.imgPath + 'butterfly.png', 80, 80); // Mathilda's NPC Sprite
-
         wizGame.phaser.load.spritesheet('purple-sq', wizGame.imgPath + 'purple_sq.png', 10, 10);
     }
 
@@ -300,7 +297,6 @@ var runGame = function (){
                         //Create NPC for WDI students - END
 // <<===========================================================================================================>>
 
-
         //CREATE ENEMIES BELOW
         enemies = game.add.group();
         enemies.enableBody = true;
@@ -539,8 +535,6 @@ var runGame = function (){
         }
     }
 
-
-
 // <<===========================================================================================================>> 
 
                         //WDI students add comments to the array they want their NPC to speak - START
@@ -561,8 +555,6 @@ var runGame = function (){
         function removeText () {
             game.world.remove(joelText);   
         }
-
-        
 
     }
 
@@ -760,9 +752,6 @@ var runGame = function (){
                         //WDI students add comments to the array they want their NPC to speak - END
 // <<===========================================================================================================>>
 
-
-
-
      // Here we check if the user has collected all the collectables when they enter the door
      function winChecker (npcName) {
         console.log("inside winchecker" + npcName);
@@ -803,8 +792,6 @@ var runGame = function (){
         setTimeout(gameOverText, 1500);
         setTimeout(gameRestart, 3000);
         
-
-
         // Show text to say you died, then reload the game.
         function gameOverText () {
             style = { font: "65px Arial", fill: "#fff", align: "center" };
