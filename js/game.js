@@ -224,10 +224,7 @@ var runGame = function (){
         Erik.enableBody = true;
         Erik.body.immovable = true;
         Erik.animations.add('talk', [0, 1], 5, true);
-        // Full opacity so it's invisible // << DO WE NEED TO REMOVE THIS?
-        // butterflyErik.alpha = 0.01; // << DO WE NEED TO REMOVE THIS?
-        // butterflyErik.animations.add('flutter', [0, 1, 2, 3], 10, true);
-        // butterflyErik.animations.play('flutter');
+
 
         // Mark butterfly =====
         Mark = game.add.sprite(1780, 1400, 'Mark');
@@ -235,10 +232,6 @@ var runGame = function (){
         Mark.enableBody = true;
         Mark.body.immovable = true;
         Mark.animations.add('talk', [0, 1], 5, true);
-        // butterfly animate
-        // butterflyMark.animations.add('flutter', [0, 1, 2, 3], 10, true);
-        // butterflyMark.animations.play('flutter');
-        //
 
         // Simon  =====
         Simon = game.add.sprite(1400, 300, 'Simon');
@@ -246,10 +239,7 @@ var runGame = function (){
         Simon.enableBody = true;
         Simon.body.immovable = true;
         Simon.animations.add('talk', [0, 1], 5, true);
-        // butterfly animate
-        // butterflySimon.animations.add('flutter', [0, 1, 2, 3], 10, true);
-        // butterflySimon.animations.play('flutter');
-        //
+
 
          // Nix  ======
         Nix = game.add.sprite(150, 800, 'Nix');
@@ -257,10 +247,6 @@ var runGame = function (){
         Nix.enableBody = true;
         Nix.body.immovable = true;
         Nix.animations.add('talk', [0, 1], 5, true);
-        // butterfly animate
-        // butterflyNix.animations.add('flutter', [0, 1, 2, 3], 10, true);
-        // butterflyNix.animations.play('flutter');
-        //
 
          // Anne  =====
         Anne = game.add.sprite(250, 1200, 'Anne');
@@ -268,10 +254,6 @@ var runGame = function (){
         Anne.enableBody = true;
         Anne.body.immovable = true;
         Anne.animations.add('talk', [0, 1], 5, true);
-        // butterfly animate
-        // butterflyAnne.animations.add('flutter', [0, 1, 2, 3], 10, true);
-        // butterflyAnne.animations.play('flutter');
-        //
 
         // Charlie  =====
         Charlie = game.add.sprite(550, 350, 'Charlie');
@@ -279,10 +261,6 @@ var runGame = function (){
         Charlie.enableBody = true;
         Charlie.body.immovable = true;
         Charlie.animations.add('talk', [0, 1], 5, true);
-        // butterfly animate
-        // butterflyCharlie.animations.add('flutter', [0, 1, 2, 3], 10, true);
-        // butterflyCharlie.animations.play('flutter');
-        //
         
         // Kriss  =====
         Kriss = game.add.sprite(1100, 1450, 'Kriss');
@@ -290,10 +268,6 @@ var runGame = function (){
         Kriss.enableBody = true;
         Kriss.body.immovable = true;
         Kriss.animations.add('talk', [0, 1], 5, true);
-        // butterfly animate
-        // butterflyKriss.animations.add('flutter', [0, 1, 2, 3], 10, true);
-        // butterflyKriss.animations.play('flutter');
-        //
 
         // Olly  =====
         Olly = game.add.sprite(1500, 750, 'Olly');
@@ -301,10 +275,7 @@ var runGame = function (){
         Olly.enableBody = true;
         Olly.body.immovable = true;
         Olly.animations.add('talk', [0, 1], 5, true);
-        // butterfly animate
-        // butterflyOlly.animations.add('flutter', [0, 1, 2, 3], 10, true);
-        // butterflyOlly.animations.play('flutter');
-        //
+
 
         // Tom  =====
         Tom = game.add.sprite(275, 500, 'Tom');
@@ -312,10 +283,7 @@ var runGame = function (){
         Tom.enableBody = true;
         Tom.body.immovable = true;
         Tom.animations.add('talk', [0, 1], 5, true);
-        // butterfly animate
-        // butterflyTom.animations.add('flutter', [0, 1, 2, 3], 10, true);
-        // butterflyTom.animations.play('flutter');
-        //
+
 
         // Mathilda butterfly =====
         Mathilda = game.add.sprite(2080, 1400, 'Mathilda');
@@ -430,47 +398,32 @@ var runGame = function (){
         // enable wall collisions
         game.physics.arcade.collide(wizGame.player, wizGame.invisWalls);
 
-
-        // // ENEMY ADDED HERE====================
-        // game.physics.arcade.collide(enemies, platforms);
-        // game.physics.arcade.collide(baddies, platforms);
-
 // <<===========================================================================================================>> 
 
                         //Create speak function when collide with WDI students - START
 // <<===========================================================================================================>> 
 
-        //  Checks to see if the player overlaps with the butterflyJoel, if he does call the easterEgg function
+        //  Checks to see if the player overlaps with an NPC
         game.physics.arcade.overlap(player, Joel, easterEgg, lastSpoke, this);
 
-        //  Checks to see if the player overlaps with the butterflyErik, if he does call the erikSpeak function
         game.physics.arcade.overlap(player, Erik, erikSpeak, lastSpoke, this);
 
-        //  Checks to see if the player overlaps with the butterflyMark, if he does call the markSpeak function
         game.physics.arcade.overlap(player, Mark, markSpeak, lastSpoke, this);
 
-        //  Checks to see if the player overlaps with the butterflySimon, if he does call the simonSpeak function
         game.physics.arcade.overlap(player, Simon, simonSpeak, lastSpoke, this);
 
-        //  Checks to see if the player overlaps with the butterflyNix, if he does call the nixSpeak function
         game.physics.arcade.overlap(player, Nix, nixSpeak, lastSpoke, this);
 
-        //  Checks to see if the player overlaps with the butterflyAnne, if he does call the anneSpeak function
         game.physics.arcade.overlap(player, Anne, anneSpeak, lastSpoke, this);
 
-        //  Checks to see if the player overlaps with the butterflyCharlie, if he does call the charlieSpeak function
         game.physics.arcade.overlap(player, Charlie, charlieSpeak, lastSpoke, this);
 
-        //  Checks to see if the player overlaps with the butterflyKriss, if he does call the krissSpeak function
         game.physics.arcade.overlap(player, Kriss, krissSpeak, lastSpoke, this);
 
-        //  Checks to see if the player overlaps with the butterflyOlly, if he does call the ollySpeak function
         game.physics.arcade.overlap(player, Olly, ollySpeak, lastSpoke, this);
 
-        //  Checks to see if the player overlaps with the butterflyTom, if he does call the tomSpeak function
         game.physics.arcade.overlap(player, Tom, tomSpeak, lastSpoke, this);
 
-        //  Checks to see if the player overlaps with the butterflyMathilda, if he does call the mathildaSpeak function
         game.physics.arcade.overlap(player, Mathilda, mathildaSpeak, lastSpoke, this);
 
 // <<===========================================================================================================>> 
@@ -482,42 +435,27 @@ var runGame = function (){
         game.physics.arcade.overlap(player, enemies, killPlayer, null, this);
         game.physics.arcade.overlap(player, baddies, killPlayer, null, this);
 
-          // Update the shadow texture each frame
-        //     this.updateShadowTexture();
-        // };
 
-        // updateShadowTexture = function() {
-            
-            // This function updates the shadow texture (this.shadowTexture).
-            // First, it fills the entire texture with a dark shadow color.
-            // Then it draws a white circle
-            // Because the texture is drawn to the screen using the MULTIPLY
-            // blend mode, the dark areas of the texture make all of the colors
-            // underneath it darker, while the white area is unaffected.
-
-            // Draw shadow THIS IS WHAT defines THE SIZE OF THE SHADOW AREAS, and the color of the shadow
-            this.shadowTexture.context.fillStyle = 'rgb(100, 100, 100)';
-            this.shadowTexture.context.fillRect(0, 0, wizGame.phaser.world.width, wizGame.phaser.world.height);
+        // Draw shadow THIS IS WHAT defines THE SIZE OF THE SHADOW AREAS, and the color of the shadow
+        this.shadowTexture.context.fillStyle = 'rgb(100, 100, 100)';
+        this.shadowTexture.context.fillRect(0, 0, wizGame.phaser.world.width, wizGame.phaser.world.height);
 
 
-            // Draw circle of light with a soft edge
-            var gradient = this.shadowTexture.context.createRadialGradient(
-                // this.game.camera.x + 100, this.game.camera.y - 50, this.LIGHT_RADIUS * 0.75,
-                // this.game.camera.x + 100, this.game.camera.y - 50, this.LIGHT_RADIUS);
-                    wizGame.player.world.x + 16, wizGame.player.world.y + 32, this.LIGHT_RADIUS * 0.75,
-                    wizGame.player.world.x + 16, wizGame.player.world.y + 32, this.LIGHT_RADIUS);
-            gradient.addColorStop(0, 'rgba(255, 255, 255, 1.0)');
-            gradient.addColorStop(1, 'rgba(255, 255, 255, 0.0)');
+        // Draw circle of light with a soft edge
+        var gradient = this.shadowTexture.context.createRadialGradient(
+                wizGame.player.world.x + 16, wizGame.player.world.y + 32, this.LIGHT_RADIUS * 0.75,
+                wizGame.player.world.x + 16, wizGame.player.world.y + 32, this.LIGHT_RADIUS);
+        gradient.addColorStop(0, 'rgba(255, 255, 255, 1.0)');
+        gradient.addColorStop(1, 'rgba(255, 255, 255, 0.0)');
 
-            this.shadowTexture.context.beginPath();
-            this.shadowTexture.context.fillStyle = gradient;
-            this.shadowTexture.context.arc(wizGame.player.world.x + 16, wizGame.player.world.y + 32,
-                this.LIGHT_RADIUS, 0, Math.PI*2);
-            this.shadowTexture.context.fill();
+        this.shadowTexture.context.beginPath();
+        this.shadowTexture.context.fillStyle = gradient;
+        this.shadowTexture.context.arc(wizGame.player.world.x + 16, wizGame.player.world.y + 32,
+            this.LIGHT_RADIUS, 0, Math.PI*2);
+        this.shadowTexture.context.fill();
 
-            // This just tells the engine it should update the texture cache
-            this.shadowTexture.dirty = true;
-        // };
+        // This just tells the engine it should update the texture cache
+        this.shadowTexture.dirty = true;
 
         //--------------------------------------
         // PLAYER MOVEMENT WITH KEYS
@@ -646,9 +584,6 @@ var runGame = function (){
             Erik.frame = 0;   
         }
 
-        
-
-
     }
 
     function markSpeak (player, Mark) {
@@ -666,9 +601,7 @@ var runGame = function (){
             game.world.remove(markText);
             Mark.animations.stop();
             Mark.frame = 0;    
-        }
-
-        
+        }      
 
     }
 
@@ -687,9 +620,7 @@ var runGame = function (){
             game.world.remove(simonText);
             Simon.animations.stop();
             Simon.frame = 0;    
-        }
-
-        
+        }      
 
     }
 
@@ -710,8 +641,6 @@ var runGame = function (){
             Nix.frame = 0;    
         }
 
-        
-
     }
 
     function anneSpeak (player, Anne) {
@@ -730,8 +659,6 @@ var runGame = function (){
             Anne.animations.stop();
             Anne.frame = 0;    
         }
-
-        
 
     }
 
@@ -771,8 +698,6 @@ var runGame = function (){
             Kriss.frame = 0;   
         }
 
-        
-
     }
 
     function ollySpeak (player, Olly) {
@@ -791,8 +716,6 @@ var runGame = function (){
             Olly.animations.stop();
             Olly.frame = 0;    
         }
-
-        
 
     }
 
@@ -813,8 +736,6 @@ var runGame = function (){
             Tom.frame = 0;    
         }
 
-        
-
     }
 
     function mathildaSpeak (player, Mathilda) {
@@ -831,8 +752,6 @@ var runGame = function (){
         function removeText () {
             game.world.remove(mathildaText);   
         }
-
-        
 
     }
 
@@ -856,25 +775,6 @@ var runGame = function (){
             }
         }
         
-        // if (score > 6) { 
-        //     win();
-        //     this.music.pause();
-        //     player.kill();
-        // } 
-        // // Displays how many butterflies are still left to catch
-        // else {
-        //     wincheck_style = { font: "50px Arial", fill: "#fff", align: "center" };
-        //     butterfliesText = game.add.text(3950, 620, "You've collected \n" + score + " butterflies.\n\n You have " + (7 - score) + "\n more to catch.", wincheck_style);
-        //     // Audio effect
-        //     notice.play('');
-        //     // Call removeText function after a couple seconds
-        //     setTimeout(removeText, 1500);
-
-        //     function removeText () {
-        //         game.world.remove(butterfliesText);   
-        //     }
-            
-        // }
      }
 
     // Win function: f the right score is reached then pause music, remove player from screen and call win function 
@@ -882,10 +782,7 @@ var runGame = function (){
         console.log("You win! Now how about offering us a job?");             
         style = { font: "65px Arial", fill: "#fff", align: "center" };
         game.add.text(game.camera.x+325, game.camera.y+150, "You Win!", style);
-        //button = game.add.button(game.camera.x+275, game.camera.y+250, 'reset-button', actionOnResetClick, this); 
-        // The following lines kill the players movement before disabling keyboard inputs
-        // player.body.velocity.x = 0;
-        // setTimeout(game.input.keyboard.disabled = true, 1000); 
+       
         explosion = game.add.sprite(player.body.x - 32, player.body.y - 32,  'explosion');
         explosion.animations.add('run_explode', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], 10, true);
         explosion.animations.play('run_explode');
@@ -895,16 +792,6 @@ var runGame = function (){
         function explodeKill () {
             explosion.kill();
         }
-        // setTimeout(gameOverText, 1500);
-        // setTimeout(gameRestart, 3000);
-        
-       
-        // When the Reset button is clicked, it calls this function, which in turn calls the game to be reloaded.
-        // Here we display the contact and replay button options, calling either respective function
-        // function actionOnResetClick () {
-        //     gameRestart();
-        // }
-
 
     } 
 
