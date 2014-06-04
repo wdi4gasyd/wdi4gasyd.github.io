@@ -26,15 +26,21 @@ var runGame = function (){
     var lastName;
 
     function preload() {
+         //loading text
+        game.add.text(250, 270, 'Welcome to the WDI Wizard School!', { font: '25px "Play"', fill: '#fff' });
+        game.add.text(250, 360, 'Introduce yourself to the students\nand teachers to complete the game.', { font: '20px "Play"', fill: '#fff' });
+        game.add.text(250, 380, 'Loading...', { font: '20px "Play"', fill: '#85b19e' });
+        // game.add.text(250, 400, 'to learn more about ', { font: '20px "Play"', fill: '#fff' });   
+
+
         //the random number here dictates which player character is loaded.
         var playerNum = Math.floor(Math.random()*10);
       
-      //here we load all of the assets we need
+        //here we load all of the assets we need
         
         wizGame.phaser.load.image('background', wizGame.imgPath + 'background-V2.jpg');
         wizGame.phaser.load.spritesheet('player', wizGame.imgPath + 'player' + playerNum + '.png', 32, 32); 
         wizGame.phaser.load.image('reset-button', wizGame.imgPath + 'reset-button.png');
-        wizGame.phaser.load.image('contact-button', wizGame.imgPath + 'contact-button.png');
         wizGame.phaser.load.spritesheet('baddie', wizGame.imgPath + 'baddie.png', 32, 32);
         wizGame.phaser.load.spritesheet('explosion', wizGame.imgPath + 'explode.png', 128, 128);
 
