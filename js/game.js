@@ -307,7 +307,7 @@ var runGame = function (){
         enemies = game.add.group();
         enemies.enableBody = true;
 
-        for (var i = 0; i < 9; i++)
+        for (var i = 0; i < 3; i++)
         {
             var enemy = enemies.create( 540 + (i * 700), 400, 'baddie');
             enemy.body.collideWorldBounds = true;
@@ -318,7 +318,7 @@ var runGame = function (){
         //add a second group of enemies with different movement styles. these baddies have short distance animations. good for platforms. 
         baddies = game.add.group();
         baddies.enableBody = true;
-        for (var i = 0; i < 4; i++)
+        for (var i = 0; i < 3; i++)
         {
             var baddy = baddies.create( 400 + (i * 900), 400, 'baddie');
             baddy.body.collideWorldBounds = true;
@@ -626,7 +626,7 @@ var runGame = function (){
     
         // Samples an array of Nix's best comments
         nixStyle = { font: "20px Arial", fill: "#fff", align: "center" };
-        var nixisms = ["\"This is Nix.\"", "\"I did the WDI course.\"", "\"Nixs words of wisdom\""]
+        var nixisms = ["\"I'm Nix.\"", "\"I love JavaScript and Ruby.\"", "\"I can perform front-end magic.\""]
         var nixText = game.add.text(125, 700, _.sample(nixisms), nixStyle);  
         Nix.animations.play('talk');
         winChecker(Nix.key);
