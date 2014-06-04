@@ -708,7 +708,7 @@ var runGame = function (){
         Olly.animations.play('talk');
         winChecker(Olly.key);
         // Call removeText function after a couple seconds
-        setTimeout(removeText, 1700);
+        setTimeout(removeText, 1500);
 
         function removeText () {
             game.world.remove(ollyText);
