@@ -42,15 +42,15 @@ var runGame = function (){
         //NPC Sprits
         wizGame.phaser.load.spritesheet('Joel', wizGame.imgPath + 'butterfly2.png', 70, 65); //Joel's NPC Sprite
 
-        wizGame.phaser.load.spritesheet('Erik', wizGame.imgPath + 'eriksprite.png', 32, 58); // Erik's NPC Sprite
-        wizGame.phaser.load.spritesheet('Mark', wizGame.imgPath + 'butterfly.png', 80, 80); // Mark's NPC Sprite
-        wizGame.phaser.load.spritesheet('Simon', wizGame.imgPath + 'butterfly.png', 80, 80); // Simon's NPC Sprite
-        wizGame.phaser.load.spritesheet('Nix', wizGame.imgPath + 'butterfly.png', 80, 80); // Nix's NPC Sprite
-        wizGame.phaser.load.spritesheet('Anne', wizGame.imgPath + 'butterfly.png', 80, 80); // Anne's NPC Sprite
-        wizGame.phaser.load.spritesheet('Charlie', wizGame.imgPath + 'butterfly.png', 80, 80); // Charlie's NPC Sprite
-        wizGame.phaser.load.spritesheet('Kriss', wizGame.imgPath + 'butterfly.png', 80, 80); // Kriss's NPC Sprite
-        wizGame.phaser.load.spritesheet('Olly', wizGame.imgPath + 'butterfly.png', 80, 80); // Olly's NPC Sprite
-        wizGame.phaser.load.spritesheet('Tom', wizGame.imgPath + 'butterfly.png', 80, 80); // Tom's NPC Sprite
+        wizGame.phaser.load.spritesheet('Erik', wizGame.imgPath + 'talk-erik.png', 32, 56); // Erik's NPC Sprite
+        wizGame.phaser.load.spritesheet('Mark', wizGame.imgPath + 'talk-mark.png', 32, 56); // Mark's NPC Sprite
+        wizGame.phaser.load.spritesheet('Simon', wizGame.imgPath + 'talk-simon.png', 32, 56); // Simon's NPC Sprite
+        wizGame.phaser.load.spritesheet('Nix', wizGame.imgPath + 'talk-nix.png', 32, 56); // Nix's NPC Sprite
+        wizGame.phaser.load.spritesheet('Anne', wizGame.imgPath + 'talk-anne.png', 32, 56); // Anne's NPC Sprite
+        wizGame.phaser.load.spritesheet('Charlie', wizGame.imgPath + 'talk-charlie.png', 32, 56); // Charlie's NPC Sprite
+        wizGame.phaser.load.spritesheet('Kriss', wizGame.imgPath + 'talk-kriss.png', 32, 56); // Kriss's NPC Sprite
+        wizGame.phaser.load.spritesheet('Olly', wizGame.imgPath + 'talk-olly.png', 32, 56); // Olly's NPC Sprite
+        wizGame.phaser.load.spritesheet('Tom', wizGame.imgPath + 'talk-tom.png', 32, 56); // Tom's NPC Sprite
         wizGame.phaser.load.spritesheet('Mathilda', wizGame.imgPath + 'butterfly.png', 80, 80); // Mathilda's NPC Sprite
 
         wizGame.phaser.load.spritesheet('purple-sq', wizGame.imgPath + 'purple_sq.png', 10, 10);
@@ -210,7 +210,7 @@ var runGame = function (){
 // <<===========================================================================================================>>
 
         // Joel =====
-        Joel = game.add.sprite(250, 1050, 'Joel'); // placement of butterfly on canvas
+        Joel = game.add.sprite(1850, 300, 'Joel'); // placement of butterfly on canvas
         game.physics.arcade.enable(Joel);
         Joel.enableBody = true;
         Joel.body.immovable = true;
@@ -219,7 +219,7 @@ var runGame = function (){
 
 
         // Erik =====
-        Erik = game.add.sprite(250, 950, 'Erik');
+        Erik = game.add.sprite(1400, 1550, 'Erik');
         game.physics.arcade.enable(Erik);
         Erik.enableBody = true;
         Erik.body.immovable = true;
@@ -230,93 +230,102 @@ var runGame = function (){
         // butterflyErik.animations.play('flutter');
 
         // Mark butterfly =====
-        Mark = game.add.sprite(250, 850, 'Mark');
+        Mark = game.add.sprite(1780, 1400, 'Mark');
         game.physics.arcade.enable(Mark);
         Mark.enableBody = true;
         Mark.body.immovable = true;
+        Mark.animations.add('talk', [0, 1], 5, true);
         // butterfly animate
         // butterflyMark.animations.add('flutter', [0, 1, 2, 3], 10, true);
         // butterflyMark.animations.play('flutter');
         //
 
         // Simon  =====
-        Simon = game.add.sprite(250, 750, 'Simon');
+        Simon = game.add.sprite(1400, 300, 'Simon');
         game.physics.arcade.enable(Simon);
         Simon.enableBody = true;
         Simon.body.immovable = true;
+        Simon.animations.add('talk', [0, 1], 5, true);
         // butterfly animate
         // butterflySimon.animations.add('flutter', [0, 1, 2, 3], 10, true);
         // butterflySimon.animations.play('flutter');
         //
 
          // Nix  ======
-        Nix = game.add.sprite(250, 650, 'Nix');
+        Nix = game.add.sprite(150, 800, 'Nix');
         game.physics.arcade.enable(Nix);
         Nix.enableBody = true;
         Nix.body.immovable = true;
+        Nix.animations.add('talk', [0, 1], 5, true);
         // butterfly animate
         // butterflyNix.animations.add('flutter', [0, 1, 2, 3], 10, true);
         // butterflyNix.animations.play('flutter');
         //
 
          // Anne  =====
-        Anne = game.add.sprite(250, 550, 'Anne');
+        Anne = game.add.sprite(250, 1200, 'Anne');
         game.physics.arcade.enable(Anne);
         Anne.enableBody = true;
         Anne.body.immovable = true;
+        Anne.animations.add('talk', [0, 1], 5, true);
         // butterfly animate
         // butterflyAnne.animations.add('flutter', [0, 1, 2, 3], 10, true);
         // butterflyAnne.animations.play('flutter');
         //
 
         // Charlie  =====
-        Charlie = game.add.sprite(250, 450, 'Charlie');
+        Charlie = game.add.sprite(550, 350, 'Charlie');
         game.physics.arcade.enable(Charlie);
         Charlie.enableBody = true;
         Charlie.body.immovable = true;
+        Charlie.animations.add('talk', [0, 1], 5, true);
         // butterfly animate
         // butterflyCharlie.animations.add('flutter', [0, 1, 2, 3], 10, true);
         // butterflyCharlie.animations.play('flutter');
         //
         
         // Kriss  =====
-        Kriss = game.add.sprite(650, 550, 'Kriss');
+        Kriss = game.add.sprite(1100, 1450, 'Kriss');
         game.physics.arcade.enable(Kriss);
         Kriss.enableBody = true;
         Kriss.body.immovable = true;
+        Kriss.animations.add('talk', [0, 1], 5, true);
         // butterfly animate
         // butterflyKriss.animations.add('flutter', [0, 1, 2, 3], 10, true);
         // butterflyKriss.animations.play('flutter');
         //
 
         // Olly  =====
-        Olly = game.add.sprite(650, 450, 'Olly');
+        Olly = game.add.sprite(1500, 750, 'Olly');
         game.physics.arcade.enable(Olly);
         Olly.enableBody = true;
         Olly.body.immovable = true;
+        Olly.animations.add('talk', [0, 1], 5, true);
         // butterfly animate
         // butterflyOlly.animations.add('flutter', [0, 1, 2, 3], 10, true);
         // butterflyOlly.animations.play('flutter');
         //
 
         // Tom  =====
-        Tom = game.add.sprite(650, 350, 'Tom');
+        Tom = game.add.sprite(275, 500, 'Tom');
         game.physics.arcade.enable(Tom);
         Tom.enableBody = true;
         Tom.body.immovable = true;
+        Tom.animations.add('talk', [0, 1], 5, true);
         // butterfly animate
         // butterflyTom.animations.add('flutter', [0, 1, 2, 3], 10, true);
         // butterflyTom.animations.play('flutter');
         //
 
         // Mathilda butterfly =====
-        Mathilda = game.add.sprite(650, 650, 'Mathilda');
+        Mathilda = game.add.sprite(2080, 1400, 'Mathilda');
         game.physics.arcade.enable(Mathilda);
         Mathilda.enableBody = true;
         Mathilda.body.immovable = true;
-        // butterfly animate
-        // butterflyMathilda.animations.add('flutter', [0, 1, 2, 3], 10, true);
-        // butterflyMathilda.animations.play('flutter');
+
+        //butterfly animate
+        Mathilda.animations.add('flutter', [0, 1, 2, 3], 10, true);
+        Mathilda.animations.play('flutter');
         //
 // <<===========================================================================================================>> 
 
@@ -605,9 +614,9 @@ var runGame = function (){
         // Samples an array of Joel's best comments
         joelStyle = { font: "20px Arial", fill: "#fff", align: "center" };
         var joelisms = ["\"Have the best time... seriously.\"", "\"Turn up the autism for that one.\"", "\"It's past 9am - R.I.P.\""]
-        var joelText = game.add.text(300, 1050, _.sample(joelisms), joelStyle);
+        var joelText = game.add.text(1650, 350, _.sample(joelisms), joelStyle);
         // var joelText = game.add.text(300, 960, "\"Have the best time... seriously.\"", joelStyle); //<< CAN THIS BE REMOVED?  
-       
+        winChecker(Joel.key);
         // Call removeText function after a couple seconds
         setTimeout(removeText, 1500);
 
@@ -615,7 +624,7 @@ var runGame = function (){
             game.world.remove(joelText);   
         }
 
-        winChecker(Joel.key);
+        
 
     }
 
@@ -623,11 +632,12 @@ var runGame = function (){
     
         // Samples an array of Erik's best comments
         erikStyle = { font: "20px Arial", fill: "#fff", align: "center" };
-        var erikisms = ["\"I'm Erik.\"", "\"Will today be a bad hair day?\"", "\"Thanks for stopping by.\""]
-        var erikText = game.add.text(350, 950, _.sample(erikisms), erikStyle);
+        var erikisms = ["\"I'm Erik.\"", "\"Will today be a bad hair day?\"", "\"Blame Canada.\""]
+        var erikText = game.add.text(1390, 1450, _.sample(erikisms), erikStyle);
         // var joelText = game.add.text(300, 960, "\"Have the best time... seriously.\"", joelStyle);  //<< CAN THIS BE REMOVED?
         Erik.animations.play('talk');
         // Call removeText function after a couple seconds 
+        winChecker(Erik.key);
         setTimeout(removeText, 1500);
 
         function removeText () {
@@ -636,7 +646,7 @@ var runGame = function (){
             Erik.frame = 0;   
         }
 
-        winChecker(Erik.key);
+        
 
 
     }
@@ -646,16 +656,19 @@ var runGame = function (){
         // Samples an array of Mark's best comments
         markStyle = { font: "20px Arial", fill: "#fff", align: "center" };
         var markisms = ["\"This is Mark.\"", "\"I did the WDI course.\"", "\"Marks words of wisdom\""]
-        var markText = game.add.text(300, 850, _.sample(markisms), markStyle);  
-       
+        var markText = game.add.text(1720, 1300, _.sample(markisms), markStyle);  
+        Mark.animations.play('talk');
+        winChecker(Mark.key);
         // Call removeText function after a couple seconds
         setTimeout(removeText, 1500);
 
         function removeText () {
-            game.world.remove(markText);   
+            game.world.remove(markText);
+            Mark.animations.stop();
+            Mark.frame = 0;    
         }
 
-        winChecker(Mark.key);
+        
 
     }
 
@@ -664,16 +677,19 @@ var runGame = function (){
         // Samples an array of Simon's best comments
         simonStyle = { font: "20px Arial", fill: "#fff", align: "center" };
         var simonisms = ["\"This is Simon.\"", "\"I did the WDI course.\"", "\"Simons words of wisdom\""]
-        var simonText = game.add.text(300, 800, _.sample(simonisms), simonStyle);  
-       
+        var simonText = game.add.text(1350, 270, _.sample(simonisms), simonStyle);  
+        Simon.animations.play('talk');
+        winChecker(Simon.key);
         // Call removeText function after a couple seconds
         setTimeout(removeText, 1500);
 
         function removeText () {
-            game.world.remove(simonText);   
+            game.world.remove(simonText);
+            Simon.animations.stop();
+            Simon.frame = 0;    
         }
 
-        winChecker(Simon.key);
+        
 
     }
 
@@ -682,16 +698,19 @@ var runGame = function (){
         // Samples an array of Nix's best comments
         nixStyle = { font: "20px Arial", fill: "#fff", align: "center" };
         var nixisms = ["\"This is Nix.\"", "\"I did the WDI course.\"", "\"Nixs words of wisdom\""]
-        var nixText = game.add.text(300, 700, _.sample(nixisms), nixStyle);  
-       
+        var nixText = game.add.text(125, 700, _.sample(nixisms), nixStyle);  
+        Nix.animations.play('talk');
+        winChecker(Nix.key);
         // Call removeText function after a couple seconds
         setTimeout(removeText, 1500);
-
+        
         function removeText () {
-            game.world.remove(nixText);   
+            game.world.remove(nixText);
+            Nix.animations.stop();
+            Nix.frame = 0;    
         }
 
-        winChecker(Nix.key);
+        
 
     }
 
@@ -699,17 +718,20 @@ var runGame = function (){
     
         // Samples an array of Anne's best comments
         anneStyle = { font: "20px Arial", fill: "#fff", align: "center" };
-        var anneisms = ["\"This is Anne.\"", "\"I did the WDI course.\"", "\"Annes words of wisdom\""]
-        var anneText = game.add.text(300, 600, _.sample(anneisms), anneStyle);  
-       
+        var anneisms = ["\"Hi! I'm Anne Homann.\"", "\"Why yes, I would love to watch Neighbours with you\"", "\"My WDI sorcery will amaze you\""]
+        var anneText = game.add.text(250, 1100, _.sample(anneisms), anneStyle);  
+        Anne.animations.play('talk');
+        winChecker(Anne.key);
         // Call removeText function after a couple seconds
         setTimeout(removeText, 1500);
 
         function removeText () {
-            game.world.remove(anneText);   
+            game.world.remove(anneText);
+            Anne.animations.stop();
+            Anne.frame = 0;    
         }
 
-        winChecker(Anne.key);
+        
 
     }
 
@@ -718,16 +740,17 @@ var runGame = function (){
         // Samples an array of Charlie's best comments
         charlieStyle = { font: "20px Arial", fill: "#fff", align: "center" };
         var charlieisms = ["\"This is Charlie.\"", "\"I did the WDI course.\"", "\"Charlies words of wisdom\""]
-        var charlieText = game.add.text(300, 500, _.sample(charlieisms), charlieStyle);  
-       
+        var charlieText = game.add.text(450, 325, _.sample(charlieisms), charlieStyle);  
+        Charlie.animations.play('talk');
+        winChecker(Charlie.key);
         // Call removeText function after a couple seconds
         setTimeout(removeText, 1500);
 
         function removeText () {
-            game.world.remove(charlieText);   
+            game.world.remove(charlieText);
+            Charlie.animations.stop();
+            Charlie.frame = 0;    
         }
-
-        winChecker(Charlie.key);
 
     }
 
@@ -736,16 +759,19 @@ var runGame = function (){
         // Samples an array of Kriss's best comments
         krissStyle = { font: "20px Arial", fill: "#fff", align: "center" };
         var krissisms = ["\"This is Kriss.\"", "\"I did the WDI course.\"", "\"Kristos words of wisdom\""]
-        var krissText = game.add.text(700, 600, _.sample(krissisms), krissStyle);  
-       
+        var krissText = game.add.text(1050, 1300, _.sample(krissisms), krissStyle);  
+        Kriss.animations.play('talk');
+        winChecker(Kriss.key);
         // Call removeText function after a couple seconds
         setTimeout(removeText, 1500);
 
         function removeText () {
-            game.world.remove(krissText);   
+            game.world.remove(krissText);
+            Kriss.animations.stop();
+            Kriss.frame = 0;   
         }
 
-        winChecker(Kriss.key);
+        
 
     }
 
@@ -754,16 +780,19 @@ var runGame = function (){
         // Samples an array of Olly's best comments
         ollyStyle = { font: "20px Arial", fill: "#fff", align: "center" };
         var ollyisms = ["\"This is Olly.\"", "\"I did the WDI course.\"", "\"Ollys words of wisdom\""]
-        var ollyText = game.add.text(700, 500, _.sample(ollyisms), ollyStyle);  
-       
+        var ollyText = game.add.text(1500, 650, _.sample(ollyisms), ollyStyle);  
+        Olly.animations.play('talk');
+        winChecker(Olly.key);
         // Call removeText function after a couple seconds
         setTimeout(removeText, 1500);
 
         function removeText () {
-            game.world.remove(ollyText);   
+            game.world.remove(ollyText);
+            Olly.animations.stop();
+            Olly.frame = 0;    
         }
 
-        winChecker(Olly.key);
+        
 
     }
 
@@ -772,16 +801,19 @@ var runGame = function (){
         // Samples an array of Tom's best comments
         tomStyle = { font: "20px Arial", fill: "#fff", align: "center" };
         var tomisms = ["\"Hi I'm Tom Dane, your friendly NPC.\"", "\"Thank you for finding me, but our princess is in another castle.\"", "\"I used to be a project manager, but then I took a WDI to the knee\""]
-        var tomText = game.add.text(700, 400, _.sample(tomisms), tomStyle);  
-       
+        var tomText = game.add.text(250, 425, _.sample(tomisms), tomStyle);  
+        Tom.animations.play('talk');
+        winChecker(Tom.key);
         // Call removeText function after a couple seconds
         setTimeout(removeText, 1500);
 
         function removeText () {
-            game.world.remove(tomText);   
+            game.world.remove(tomText);
+            Tom.animations.stop();
+            Tom.frame = 0;    
         }
 
-        winChecker(Tom.key);
+        
 
     }
 
@@ -789,9 +821,10 @@ var runGame = function (){
 
         // Samples an array of Mathilda's best comments
         mathildaStyle = { font: "20px Arial", fill: "#fff", align: "center" };
-        var mathildaisms = ["\"This is Mathilda.\"", "\"I teach the WDI course.\"", "\"Mathildas words of wisdom\""]
-        var mathildaText = game.add.text(700, 700, _.sample(mathildaisms), mathildaStyle);  
-       
+        var mathildaisms = ["\"Call me Tilly\"", "\"WDI students love me.\"", "\"I'm Mazza.\""]
+        var mathildaText = game.add.text(1900, 1350, _.sample(mathildaisms), mathildaStyle);  
+        Mathilda.animations.play('talk');
+        winChecker(Mathilda.key);
         // Call removeText function after a couple seconds
         setTimeout(removeText, 1500);
 
@@ -799,7 +832,7 @@ var runGame = function (){
             game.world.remove(mathildaText);   
         }
 
-        winChecker(Mathilda.key);
+        
 
     }
 
