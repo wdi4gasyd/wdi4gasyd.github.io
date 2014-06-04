@@ -702,8 +702,9 @@ var runGame = function (){
     
         // Samples an array of Olly's best comments
         ollyStyle = { font: "20px Arial", fill: "#fff", align: "center" };
-        var ollyisms = ["\"This is Olly.\"", "\"I did the WDI course.\"", "\"Ollys words of wisdom\""]
-        var ollyText = game.add.text(1500, 650, _.sample(ollyisms), ollyStyle);  
+        var ollyisms = ["\"JS is the older, less attractive, and less intelligent sibling of Backbone.\"", "\"Code debugging is directly proportional to bourbon drinking.\"", "\"Hi I'm Olly, you should Snapchat me.\""]
+        //1) "JS is the older, less attractive, and less intelligent sibling of Backbone."  2) "Code debugging is directly proportional to bourbon drinking." and finally 3) "Hi I'm Olly, you should Snapchat me."
+        var ollyText = game.add.text(1350, 650, _.sample(ollyisms), ollyStyle);  
         Olly.animations.play('talk');
         winChecker(Olly.key);
         // Call removeText function after a couple seconds
