@@ -29,7 +29,7 @@ var runGame = function (){
          //loading text
         game.add.text(250, 270, 'Welcome to the WDI Wizard School!', { font: '25px "Play"', fill: '#fff' });
         game.add.text(250, 360, 'Introduce yourself to the students\nand teachers to complete the game.', { font: '20px "Play"', fill: '#fff' });
-        game.add.text(250, 400, 'Loading...', { font: '20px "Play"', fill: '#85b19e' });
+        game.add.text(250, 410, 'Loading...', { font: '20px "Play"', fill: '#85b19e' });
         // game.add.text(250, 400, 'to learn more about ', { font: '20px "Play"', fill: '#fff' });   
 
 
