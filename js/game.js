@@ -607,7 +607,7 @@ var runGame = function (){
     
         // Samples an array of Simon's best comments
         simonStyle = { font: "20px Arial", fill: "#fff", align: "center" };
-        var simonisms = ["\"Hi I'm Simon.\"", "\"I heart grumpycat.\"", "\"I'm keen to try it out sometime… in some kind of parallel universe where I have spare time.\""]
+        var simonisms = ["\"Hi I'm Simon.\"", "\"I heart grumpycat.\"", "\"I'm keen to try it out sometime.. in some kind of parallel universe where I have spare time.\""]
         var simonText = game.add.text(1050, 270, _.sample(simonisms), simonStyle);  
         Simon.animations.play('talk');
         winChecker(Simon.key);
