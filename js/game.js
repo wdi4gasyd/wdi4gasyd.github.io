@@ -587,7 +587,7 @@ var runGame = function (){
     function markSpeak (player, Mark) {
     
         // Samples an array of Mark's best comments
-        markStyle = { font: "20px Arial", fill: "#fff", align: "center" };
+        markStyle = { font: "16px Arial", fill: "#fff", align: "center" };
         var markisms = ["\"Hi! I'm Mark.\"", "\"I like to talk about how you are feeling and stuff.\"", "\"I have white hair in my beard. This means I'm either I'm getting old..OR..I'm becoming a Wizard!\""]
         var markText = game.add.text(1520, 1300, _.sample(markisms), markStyle);  
         Mark.animations.play('talk');
