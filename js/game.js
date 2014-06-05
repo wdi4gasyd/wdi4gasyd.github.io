@@ -222,7 +222,7 @@ var runGame = function (){
 
 
         // Erik =====
-        Erik = game.add.sprite(1400, 1750, 'Erik');
+        Erik = game.add.sprite(1400, 1550, 'Erik');
         game.physics.arcade.enable(Erik);
         Erik.enableBody = true;
         Erik.body.immovable = true;
