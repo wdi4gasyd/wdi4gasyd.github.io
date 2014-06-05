@@ -626,7 +626,7 @@ var runGame = function (){
     
         // Samples an array of Nix's best comments
         nixStyle = { font: "20px Arial", fill: "#fff", align: "center" };
-        var nixisms = ["\"I'm Nix.\"", "\"I love JavaScript and Ruby.\"", "\"I can perform front-end magic.\""]
+        var nixisms = ["\"Hi, I'm Nix Siow.\"", "\"I ♥ JavaScript and Ruby ♥♥♥.\"", "\"I am a time traveler, I can perform front-end magic. Watch me!\""]
         var nixText = game.add.text(125, 700, _.sample(nixisms), nixStyle);  
         Nix.animations.play('talk');
         winChecker(Nix.key);
