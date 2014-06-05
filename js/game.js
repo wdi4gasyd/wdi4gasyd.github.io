@@ -588,8 +588,8 @@ var runGame = function (){
     
         // Samples an array of Mark's best comments
         markStyle = { font: "20px Arial", fill: "#fff", align: "center" };
-        var markisms = ["\"This is Mark.\"", "\"I did the WDI course.\"", "\"Marks words of wisdom\""]
-        var markText = game.add.text(1720, 1300, _.sample(markisms), markStyle);  
+        var markisms = ["\"Hi! I'm Mark.\"", "\"I like to talk about how you are feeling and stuff.\"", "\"I have white hair in my beard. This means I'm either I'm getting old..OR..I'm becoming a Wizard!\""]
+        var markText = game.add.text(1520, 1300, _.sample(markisms), markStyle);  
         Mark.animations.play('talk');
         winChecker(Mark.key);
         // Call removeText function after a couple seconds
@@ -607,7 +607,7 @@ var runGame = function (){
     
         // Samples an array of Simon's best comments
         simonStyle = { font: "20px Arial", fill: "#fff", align: "center" };
-        var simonisms = ["\"Hi I'm Simon.\"", "\"I heart grumpycat.\"", "\"I'm keen to try it out sometime… in some kind of parallel universe where I have spare time.\""]
+        var simonisms = ["\"Hi I'm Simon.\"", "\"I heart grumpycat.\"", "\"I'm keen to try it out sometime.. in some kind of parallel universe where I have spare time.\""]
         var simonText = game.add.text(1050, 270, _.sample(simonisms), simonStyle);  
         Simon.animations.play('talk');
         winChecker(Simon.key);
