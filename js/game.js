@@ -607,8 +607,8 @@ var runGame = function (){
     
         // Samples an array of Simon's best comments
         simonStyle = { font: "20px Arial", fill: "#fff", align: "center" };
-        var simonisms = ["\"This is Simon.\"", "\"I did the WDI course.\"", "\"Simons words of wisdom\""]
-        var simonText = game.add.text(1350, 270, _.sample(simonisms), simonStyle);  
+        var simonisms = ["\"Hi I'm Simon.\"", "\"I heart grumpycat.\"", "\"I'm keen to try it out sometime… in some kind of parallel universe where I have spare time.\""]
+        var simonText = game.add.text(1050, 270, _.sample(simonisms), simonStyle);  
         Simon.animations.play('talk');
         winChecker(Simon.key);
         // Call removeText function after a couple seconds
@@ -683,8 +683,8 @@ var runGame = function (){
     
         // Samples an array of Kriss's best comments
         krissStyle = { font: "20px Arial", fill: "#fff", align: "center" };
-        var krissisms = ["\"This is Kriss.\"", "\"I did the WDI course.\"", "\"Kristos words of wisdom\""]
-        var krissText = game.add.text(1050, 1300, _.sample(krissisms), krissStyle);  
+        var krissisms = ["\"Hi! I'm Kriss Fart.\"", "\"this one time, I used PHP, but it was horrible so I didn\'t do it anymore\"", "\"Is the beer fridge unlocked?\""]
+        var krissText = game.add.text(850, 1300, _.sample(krissisms), krissStyle);  
         Kriss.animations.play('talk');
         winChecker(Kriss.key);
         // Call removeText function after a couple seconds
