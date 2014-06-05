@@ -140,7 +140,7 @@ yearBook.yearBookStudents = new yearBook.Students([
     name: 'Mark',
     slug: 'mark-pereira',
     photoURL: 'img/headshot-mark.jpg',
-    aboutMe: 'your bio',
+    aboutMe: '1987 and \'California Games\' was my first experience with a pc. 27 years later I\'ve finally learned to code. Becoming a full stack developer has allowed me to turn my ideas into something tangible. I am passionate about creating successful global businesses that help others achieve their goals. With this new skillset I have a license to be dangerous... Investors get your pens and chequebooks ready.',
     portfolioImage1: 'img/mark-recipes.jpg',
     portfolioImage2: 'img/simon-demochattic.jpg',
     portfolioImage3: 'img/mark-airtribuo.jpg',
