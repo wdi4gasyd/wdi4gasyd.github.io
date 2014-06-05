@@ -683,7 +683,7 @@ var runGame = function (){
     
         // Samples an array of Kriss's best comments
         krissStyle = { font: "20px Arial", fill: "#fff", align: "center" };
-        var krissisms = ["\"This is Kriss.\"", "\"I did the WDI course.\"", "\"Kristos words of wisdom\""]
+        var krissisms = ["\"Hi! I'm Kriss Fart.\"", "\"this one time, I used PHP, but it was horrible so I didn\'t do it anymore\"", "\"Is the beer fridge unlocked?\""]
         var krissText = game.add.text(1050, 1300, _.sample(krissisms), krissStyle);  
         Kriss.animations.play('talk');
         winChecker(Kriss.key);
