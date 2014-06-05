@@ -664,7 +664,7 @@ var runGame = function (){
     
         // Samples an array of Charlie's best comments
         charlieStyle = { font: "20px Arial", fill: "#fff", align: "center" };
-        var charlieisms = ["\"This is Charlie.\"", "\"I did the WDI course.\"", "\"Charlies words of wisdom\""]
+        var charlieisms = ["\"Hi! I'm Charlie but it's not my real name.\"", "\"I come from a parallel universe where lolcats are kings.\"", "\"Le chat noir tres bien oui oui baguette.\""]
         var charlieText = game.add.text(450, 325, _.sample(charlieisms), charlieStyle);  
         Charlie.animations.play('talk');
         winChecker(Charlie.key);
