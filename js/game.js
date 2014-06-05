@@ -588,7 +588,7 @@ var runGame = function (){
     
         // Samples an array of Mark's best comments
         markStyle = { font: "20px Arial", fill: "#fff", align: "center" };
-        var markisms = ["\"This is Mark.\"", "\"I did the WDI course.\"", "\"Marks words of wisdom\""]
+        var markisms = ["\"Hi! I'm Mark.\"", "\"I like to talk about how you are feeling and stuff.\"", "\"ooh..I have white hair in my beard. This means one of two things.. either I'm getting old... OR...  I'm becoming a Wizard!\""]
         var markText = game.add.text(1720, 1300, _.sample(markisms), markStyle);  
         Mark.animations.play('talk');
         winChecker(Mark.key);
