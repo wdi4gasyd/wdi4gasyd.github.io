@@ -612,7 +612,7 @@ var runGame = function (){
         Simon.animations.play('talk');
         winChecker(Simon.key);
         // Call removeText function after a couple seconds
-        setTimeout(removeText, 1500);
+        setTimeout(removeText, 2000);
 
         function removeText () {
             game.world.remove(simonText);
